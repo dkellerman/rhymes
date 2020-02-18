@@ -26,6 +26,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       },
       sort: [
         { 'doc.freq': 'desc' },
+        '_score',
       ],
     },
   });
