@@ -20,7 +20,6 @@ const RhymesSearchPage = () => {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
-    console.log("Q", query);
     if (!query) {
       setResults(null);
       return;
@@ -48,12 +47,12 @@ const RhymesSearchPage = () => {
           onChange={e => setQuery(e.target.value)}
           placeholder="Search for rhymes used in actual songs..."
           value={query}
-          size={60}
+          size={80}
         />
       </header>
 
       <main>
-        {hasResults && (
+        {loading && '...' || (hasResults && (
           <>
             <div className="info">
               { results.total } rhymes for
@@ -70,7 +69,7 @@ const RhymesSearchPage = () => {
           </>
         ) || (
           <div className="no-results">{query && 'No rhymes found.'}</div>
-        )}
+        ))}
       </main>
     </>
   );
