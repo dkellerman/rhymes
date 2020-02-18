@@ -2,6 +2,7 @@ const fs = require('fs');
 const env = require('./next.config').env;
 const { Client: ESClient } = require('@elastic/elasticsearch')
 const elastic = new ESClient({ node: env.ELASTIC_ENDPOINT });
+const indexConfig = require('./index_config.json');
 
 const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
@@ -42,9 +43,10 @@ async function reindex() {
 }
 
 async function createIndex(index, actions) {
+  const config = indexConfig[index];
   console.log('Indexing', actions.length, 'rhymes =>', index, '...');
   await elastic.indices.delete({ index }).catch(e => {});
-  await elastic.indices.create({ index });
+  await elastic.indices.create({ index, body: config });
 
   // this doesn't index all docs for some reason:
   // await elastic.bulk({ body: actions });
