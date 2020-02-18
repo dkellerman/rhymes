@@ -1,7 +1,7 @@
 const fs = require('fs');
+const env = require('./next.config').env;
 const { Client: ESClient } = require('@elastic/elasticsearch')
-
-const elastic = new ESClient({ node: process.env.ELASTIC_ENDPOINT });
+const elastic = new ESClient({ node: env.ELASTIC_ENDPOINT });
 
 const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
@@ -30,7 +30,7 @@ async function reindex() {
 
     actions.push({
       index: {
-        _index: process.env.ELASTIC_INDEX,
+        _index: env.ELASTIC_INDEX,
         _type: 'entry',
         _id: doc.id,
       },
@@ -38,7 +38,7 @@ async function reindex() {
     });
   }
 
-  await createIndex(process.env.ELASTIC_INDEX, actions);
+  await createIndex(env.ELASTIC_INDEX, actions);
 }
 
 async function createIndex(index, actions) {

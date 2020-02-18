@@ -85,9 +85,9 @@ async function fetchRhymes(q): Promise<SearchResults> {
   const { results } = await resp.json();
 
   const uniqueHits = uniqBy(results.hits.hits.map(hit => {
-    const h = hit._source.doc;
-    h.word = h.word1 === q ? h.word2 : h.word1;
-    return h;
+    const doc = hit._source.doc;
+    doc.word = doc.word1 === q ? doc.word2 : doc.word1;
+    return doc;
   }), 'word');
 
   results.hits.hits = uniqueHits;
