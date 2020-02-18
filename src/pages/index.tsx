@@ -15,6 +15,7 @@ type SearchResults = {
 
 const RhymesSearchPage = () => {
   const router = useRouter();
+  const searchInput = React.useRef<HTMLInputElement|null>(null);
   const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<SearchResults|null>(null);
   const [loading, setLoading] = React.useState(false);
@@ -32,6 +33,10 @@ const RhymesSearchPage = () => {
     });
   }, [query]);
 
+  React.useEffect(() => {
+    searchInput?.current?.focus();
+  }, [results]);
+
   const hasResults = Boolean(results?.hits?.length);
 
   return (
@@ -43,10 +48,10 @@ const RhymesSearchPage = () => {
       <header>
         <DebounceInput
           type="search"
+          inputRef={searchInput}
           debounceTimeout={300}
           onChange={e => setQuery(e.target.value)}
           placeholder="Search for rhymes used in actual songs..."
-          value={query}
           size={80}
         />
       </header>
