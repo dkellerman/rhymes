@@ -7,3 +7,5 @@ env/
 *.sqlite
 *.swp
 env.json
+.env
+.now

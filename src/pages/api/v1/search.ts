@@ -1,18 +1,17 @@
 import { Client as ESClient } from '@elastic/elasticsearch';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { ELASTIC_ENDPOINT, ELASTIC_INDEX } from '../../../../env';
 
 type Query = {
   q?: string;
 };
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const elastic = new ESClient({ node: ELASTIC_ENDPOINT });
+  const elastic = new ESClient({ node: process.env.ELASTIC_ENDPOINT });
   const { q: qstr = '' } = req.query as Query;
   const q = qstr.trim().toLowerCase();
 
   const results = await elastic.search({
-    index: ELASTIC_INDEX,
+    index: process.env.ELASTIC_INDEX,
     type: 'entry',
     body: {
       size: 50,

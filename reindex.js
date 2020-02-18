@@ -1,8 +1,7 @@
 const fs = require('fs');
 const { Client: ESClient } = require('@elastic/elasticsearch')
-const env = require('./env.json');
 
-const elastic = new ESClient({ node: env.ELASTIC_ENDPOINT });
+const elastic = new ESClient({ node: process.env.ELASTIC_ENDPOINT });
 
 const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
@@ -31,7 +30,7 @@ async function reindex() {
 
     actions.push({
       index: {
-        _index: env.ELASTIC_INDEX,
+        _index: process.env.ELASTIC_INDEX,
         _type: 'entry',
         _id: doc.id,
       },
@@ -39,7 +38,7 @@ async function reindex() {
     });
   }
 
-  await createIndex(env.ELASTIC_INDEX, actions);
+  await createIndex(process.env.ELASTIC_INDEX, actions);
 }
 
 async function createIndex(index, actions) {
