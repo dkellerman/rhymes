@@ -1,0 +1,8 @@
+.next/
+.vscode/
+node_modules/
+*.report.html
+.now/
+env/
+*.sqlite
+*.swp
