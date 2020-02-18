@@ -15,16 +15,18 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     index: ELASTIC_INDEX,
     type: 'entry',
     body: {
-      size: 30,
+      size: 50,
       query: {
         bool: {
           should: [
             { term: { 'doc.word1': q } },
             { term: { 'doc.word2': q } },
-          ],
-          // minimum_number_should_match: 1,
+          ]
         },
       },
+      sort: [
+        { 'doc.freq': 'desc' },
+      ],
     },
   });
 

@@ -9,18 +9,18 @@ const makePairs = (arr) =>
 
 async function reindex() {
   const lines = fs.readFileSync('./rhymes.txt', 'utf8').split('\n');
-  const rhymes = {};
+  const freqs = {};
 
   for (const line of lines) {
     const words = line.split(';').map(t => t.trim().toLowerCase());
     for (const pair of makePairs(words)) {
       const wid = pair.sort().join(';');
-      rhymes[wid] = (rhymes[wid] || 0) + 1;
+      freqs[wid] = (freqs[wid] || 0) + 1;
     }
   }
 
-  const rhymeActions = [];
-  for (const [id, freq] of Object.entries(rhymes)) {
+  const actions = [];
+  for (const [id, freq] of Object.entries(freqs)) {
     const [word1, word2] = id.split(';');
     const doc = {
       id,
@@ -28,7 +28,8 @@ async function reindex() {
       word2,
       freq,
     };
-    rhymeActions.push({
+
+    actions.push({
       index: {
         _index: env.ELASTIC_INDEX,
         _type: 'entry',
@@ -38,14 +39,25 @@ async function reindex() {
     });
   }
 
-  await createIndex(env.ELASTIC_INDEX, rhymeActions);
+  await createIndex(env.ELASTIC_INDEX, actions);
 }
 
 async function createIndex(index, actions) {
-  console.log('Indexing', actions.length, 'items to index', index, '...');
+  console.log('Indexing', actions.length, 'rhymes =>', index, '...');
   await elastic.indices.delete({ index }).catch(e => {});
   await elastic.indices.create({ index });
-  await elastic.bulk({ body: actions });
+
+  // this doesn't index all docs for some reason:
+  // await elastic.bulk({ body: actions });
+
+  for (const act of actions) {
+    await elastic.index({
+      id: act.index._id,
+      type: 'entry',
+      index: act.index._index,
+      body: act,
+    });
+  }
 }
 
 reindex();
