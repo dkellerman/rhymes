@@ -1,9 +1,15 @@
-require('dotenv').config();
+const isDev = process.env.NODE_ENV === 'development';
 
-module.exports = {
+const config = {
   target: 'serverless',
-  env: {
+};
+
+if (isDev) {
+  require('dotenv').config();
+  config.env = {
     ELASTIC_ENDPOINT: process.env.ELASTIC_ENDPOINT,
     ELASTIC_INDEX: process.env.ELASTIC_INDEX,
-  },
-};
+  };
+}
+
+module.exports = config;

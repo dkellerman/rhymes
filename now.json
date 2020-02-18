@@ -1,6 +1,6 @@
 {
  "env": {
-   "ELASTIC_ENDPOINT": "@elastic_endpoint",
+   "ELASTIC_ENDPOINT": "@elastic-endpoint",
    "ELASTIC_INDEX": "rhymes"
   }
 }
