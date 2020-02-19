@@ -7,5 +7,4 @@ env/
 *.sqlite
 *.swp
 .env.local
-.env.production
 .now
