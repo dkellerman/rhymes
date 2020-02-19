@@ -43,6 +43,7 @@ const RhymesSearchPage = () => {
     <>
       <Head>
         <title>Rhymes Search</title>
+        <Analytics />
       </Head>
 
       <header>
@@ -93,5 +94,21 @@ async function fetchRhymes(q): Promise<SearchResults> {
   results.hits.hits = uniqueHits;
   return results.hits;
 }
+
+const Analytics: React.FC = () => {
+  return (
+    <>
+      {process.env.GA_ID && (
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_ID}`}></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', process.env.GA_ID);
+        `}</script>
+      )}
+    </>
+  );
+};
 
 export default RhymesSearchPage;
