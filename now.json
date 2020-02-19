@@ -1,7 +1,9 @@
 {
- "env": {
-   "ELASTIC_ENDPOINT": "@elastic-endpoint",
-   "ELASTIC_INDEX": "@elastic-index",
-   "GA_ID": "@ga-id"
+  "build": { 
+    "env": {
+       "ELASTIC_ENDPOINT": "@elastic-endpoint",
+       "ELASTIC_INDEX": "@elastic-index",
+       "GA_ID": "@ga-id"
+    }
   }
 }
