@@ -1,8 +1,3 @@
-sad; glad
-through; you
-untrue; you
-head; said
-do; you
 pounds; reknown
 eyes; high
 heavy; chevy
@@ -13,9 +8,8 @@ could; woods
 cared; share
 moves; blues
 wonder; thunder
-two; moves; lose
-want to; run through; on to; soon; off you
-mama; wanna
+2; moves; lose
+mama; want to; run through; on to; soon; off you
 down; cloud
 love; drug; up
 ceiling; dealer
@@ -24,6 +18,19 @@ away; veins
 nicotine; bean; fiend; stream
 eyes; twice
 chronic; call it
+petrified; side
+wrong; strong; along
+space; face
+key; me
+door; anymore
+go; now
+goodbye; die; I
+survive; I; alive
+live; give
+apart; heart
+cry; high
+new; you
+free; me
 sand; hand
 nose; toes
 atlantic; planned it
@@ -51,6 +58,17 @@ side; times
 done; home
 outside; tried
 heart; anymore
+one; sun; everyone
+mona lisa; reason
+cool; groove
+good; world
+enough; up
+mood; smooth
+ocean; emotion
+moon; you; smooth
+thing; shame; name
+barrio; radio; world; slow
+out; round
 been; sin
 face; mistake; play
 tie; lie
@@ -74,8 +92,6 @@ everyone; wrong; on; own
 friends; them
 wrong; from
 small; all; vulnerable; walls
-highways; byway
-refueling; need
 around; out
 name; everything; thing; swing
 real; feel
@@ -85,17 +101,11 @@ stars; guitar
 frogs; dogs
 grass; glass
 road; toes; crows; grow
-one; sun; everyone
-mona lisa; reason
-cool; groove
-good; world
-enough; up
-mood; smooth
-ocean; emotion
-moon; you; smooth
-thing; shame; name
-barrio; radio; world; slow
-out; round
+highways; byway
+refueling; need
+trouble; struggle; cuddle; lovin'
+wish; miss; outlive; shit
+partly; sorry; party; on me; no me
 found; around
 alone; telephone
 cruel; true
@@ -104,41 +114,43 @@ love; of
 way; say
 apart; heart
 do; you
-go; hollow
-came; game
-running; jumping; thumping
-slow; radio
-wall; waterfall
+car; are
+line; anytime; night
+from; chart
+love; enough
+come; up
+why; alibi
+anytime; wine
 way; day
-own; grown
-there; grass
-about; stadium
-give; live; kiss
-trash; ask; understand
-did; is
-grenade; blade; train; anything; pain; brain; same
-numb; from
-mad; bad
-are; car
-fire; liar
+anytime; ride; design; overtime
+gas; glass
+find; behind
+divine; mind; blind; behind
+fine; mind
+you; do
+feeling; pleasing; confusing
+inside; hide; aside
+illusion; using; cruising
+high; light
+gas; ass
+gone; song
+you; to
+rain; end; friend; again
+stand; hand
+day; way
+mind; time
+knows; blows
+sun; come
+time; line
+around; ground
+now; around
+me; company
+together; remember
+sense; friends
+off; love; rough
+low; though; know
+way; say
 go; know
-believe it; pieces; peace; breathe; knees
-love; up; enough
-apart; heart
-you; too
-all; know
-out; now
-same; pain
-pretend; again
-home; chromosomes
-understand; strand
-well; tell; fell
-wish; kiss; this
-holding; showing; blowing; going
-crazy; maybe; baby; chase me
-call; fall; all
-steal; real; feel
-so bad; know that
 saturday; me
 in; gin
 memory; complete; sweet
@@ -153,26 +165,84 @@ smile; while
 me; see
 carnival; jar
 here; beer
+wrong; long
+ring; thing
+on; long
+place; space
+there; care
+touch; enough; much
+life; twice; advice
+soul; control
+limb; them
+fun; come; done
+sound; down
+citizen; discipline
+turn; her
+feel; wheel
+clean; machine
+shoe; avenue; bedroom
+fearin'; steerin'
+poppin'; stoppin'
+here; clear
+there; beware
+sound; down
+drawn; wrong
+minds; behind
+heat; street
+signs; side
+deep; creep
+afraid; away
+line; time; dime
+by; eyes
+man; stand
+do; rules
+law; four; more; far; bar
+mind; time; line
+give; live; kiss
+trash; ask; understand
+did; is
+grenade; blade; train; anything; pain; brain; same
+numb; from
+mad; bad
+are; car
+fire; liar
+go; hollow
+came; game
+running; jumping; thumpin'
+slow; radio
+wall; waterfall
+way; day
+own; grown
+there; grass
+about; stadium
 day; ok; say
 scam; hand; plans
 day; way
-me; company
-together; remember
-sense; friends
-off; love; rough
-low; though; know
-way; say
+out; now
+same; pain
+pretend; again
+home; chromosomes
+understand; strand
+well; tell; fell
+wish; kiss; this
+holding; showin'; blowin'; going
+crazy; maybe; baby; chase me
+call; fall; all
+steal; real; feel
+so bad; know that
+me; memories
+face; place
+sky; cry
+skies; eyes
+rain; pain
+place; rain
+hide; by
 go; know
-gas; glass
-find; behind
-divine; mind; blind; behind
-fine; mind
-you; do
-feeling; pleasing; confusing
-inside; hide; aside
-illusion; using; cruising
-high; light
-gas; ass
+believe it; pieces; peace; breathe; knees
+love; up; enough
+apart; heart
+you; too
+all; know
 great; state
 go; zydeco
 book; luck
@@ -181,54 +251,17 @@ do; bayou
 dude; you
 great; straight
 away; cafe; chenier
-gone; song
-you; to
-rain; end; friend; again
-stand; hand
-day; way
-mind; time
-knows; blows
-sun; come
-time; line
-around; ground
-now; around
-place; space
-there; care
-touch; enough; much
-life; twice; advice
-soul; control
-limb; them
-fun; come; done
-car; are
-line; anytime; night
-from; chart
-love; enough
-come; up
-why; alibi
-anytime; wine
-way; day
-anytime; ride; design; overtime
-line; time; dime
-by; eyes
-man; stand
-do; rules
-law; four; more; far; bar
-mind; time; line
-sound; down
-citizen; discipline
-turn; her
-feel; wheel
-clean; machine
-shoe; avenue; bedroom
-fearing; steering
-popping; stopping
-me; memories
-face; place
-sky; cry
-skies; eyes
-rain; pain
-place; rain
-hide; by
+quick; get; lip
+lie; mind; I; eye; night
+close; go
+on; song
+ring; bring
+forming; calling
+alright; night
+don't; know
+want; don't
+smile; side; tonight; right; fight; time
+on; microphone; want
 calling; warning; falling
 escape; wait
 hit; it
@@ -248,17 +281,6 @@ drug; much
 away; day
 should; good
 doubt; freak out
-quick; get; lip
-lie; mind; I; eye; night
-close; go
-on; song
-ring; bring
-forming; calling
-alright; night
-don't; know
-want; don't
-smile; side; tonight; right; fight; time
-on; microphone; want
 mind; find
 been; seen
 play; away
@@ -301,12 +323,17 @@ need; anything
 enough; drunk
 mind; time
 kindness; weakness
-wilding; friday; monday
+wildin'; friday; monday
 optimist; positive
 trash; spaz
 tonight; times; apologize
 selfish; been; reckless; understand
 jail; bail; sale
+bus; what; dust
+insane; rain; cane
+go; home
+mains; change
+out; south
 wind; again
 thin; in
 deep; scream; thing
@@ -317,6 +344,12 @@ space; replaced
 holds; rainbow
 closed; road; glow; know
 boom; moon; you; through
+style; while
+crowd; loud
+fully; truly
+ground; sounds
+love; soft
+called; fall
 see; be
 time; intertwined; inclined
 fault; bought
@@ -327,28 +360,12 @@ uncertainty; loyalty
 sign; mind
 town; around
 mind; crime
-bus; what; dust
-insane; rain; cane
-go; home
-mains; change
-out; south
-fully; truly
-ground; sounds
-love; soft
-called; fall
-complicated; change it; waiting
-red; lipstick; first in
-around; out
-out; 'bout
-tight; night
-blue jeans; mood ring
-same; rain
-do; moves
-wants; drop; stop; got
-thought; park; heart
-weekend; keeping; thinking
-up; love
-ledge; edge; this
+yours; dark; sworn
+days; afraid
+eyes; hide
+those; clothes
+still; will
+eye; like
 amazing; phrase in
 drug; love; up
 outcast; backlash
@@ -365,6 +382,24 @@ way; cage; days
 live; in; is
 innocence; silence
 good; would
+be; history
+shy; inside
+sunshine; mine
+free; see
+grey; say; away; ok
+go; know
+eternally; see
+bar; stars
+haze; days
+tired; bright; goodnight
+away; day
+fact; that
+together; ever
+wall; fall
+stay; day
+alright; night
+sad; glad
+play; away
 stand; man; understand
 fact; trapped
 things; heartache
@@ -375,30 +410,36 @@ bay; say
 be; me
 pay; stay
 do; through; view
-been; dream
-door; for
-from; belong
-hear; near
-there; care
-name; came
-grave; saved
-manhattan; happening; clapping
-drop; pop
-miami; jammies; scampi
-got it; wallet
-miles; smile
-puerto rico; we go
-fleek; keep; leave
-paris; karats; fairest
-me; agree
-time; mind
-you; do
-bright; ice; like; night; white
-away; day
-fact; that
-together; ever
-wall; fall
-stay; day
+mother; another
+old; ago
+rodeo; go
+time; try
+man; dam
+today; say
+rising; mine; tonight
+behind; bind
+sighs; light
+fantasy; reality; see; sympathy; me
+eyes; skies
+go; low; blows
+head; dead
+cry; time
+spine; time
+eye; die
+see; me
+love; of
+much; touch
+dream; magazine
+me; fantasy
+there; dare
+style; child
+me; mystery; fantasy
+here; year; there
+hand; can
+there; hair
+everywhere; care
+everywhere; share; there
+dies; eyes
 cold; gold
 hood; good
 city; pretty
@@ -411,27 +452,15 @@ mississippi; skippy
 own; show
 on; flaunt
 up; whaa
-fantasy; reality; see; sympathy; me
-eyes; skies
-go; low; blows
-head; dead
-cry; time
-spine; time
-eye; die
-see; me
-rising; mine; tonight
-behind; bind
-sighs; light
-here; year; there
-hand; can
-there; hair
-everywhere; care
-everywhere; share; there
-dies; eyes
-say; away
-me; me
-cheek; complete
-away; way
+rehab; black; back
+no; know; go
+time; fine
+ray; days; hathaway
+class; glass
+here; idea; near
+depressed; rest
+again; friend; ten; mend
+pride; dried
 joke; toke
 sing; harmony
 fires; liars
@@ -444,40 +473,20 @@ follow; tomorrow
 shun; sun
 spoke; broke; toked; folked
 recession; oppression
-clapping; happened
+clappin'; happened
 spell bound; hell bound; fell down; melt-down
 chicks; hypocrites; it
-fashion; smashing
+fashion; smashin'
 joke; soaked; revoked; broke; choke; focus; close; hocus; pocus
 back; bushwhacked; attack; crack
 away; relate
-eye; sighs
-tonight; time
-everywhere; stare
-beat; street
-bed; head
-lies; patronize
-don't; won't
-hours; power
-see; me
-right; fight
-love; of
-much; touch
-dream; magazine
-me; fantasy
-there; dare
-style; child
-me; mystery; fantasy
-be; history
-shy; inside
-sunshine; mine
-free; see
-grey; say; away; ok
-go; know
-eternally; see
-bar; stars
-haze; days
-tired; bright; goodnight
+been; dream
+door; for
+from; belong
+hear; near
+there; care
+name; came
+grave; saved
 cola; lola
 guy; spine
 understand; man
@@ -489,28 +498,39 @@ knees; me
 stay; way
 girls; world
 hand; man
-alright; night
-yours; dark; sworn
-days; afraid
-eyes; hide
-those; clothes
-still; will
-eye; like
-mother; another
-old; ago
-rodeo; go
-time; try
-man; dam
-today; say
-rehab; black; back
-no; know; go
-time; fine
-ray; days; hathaway
-class; glass
-here; idea; near
-depressed; rest
-again; friend; ten; mend
-pride; dried
+say; away
+me; me
+cheek; complete
+away; way
+eye; sighs
+tonight; time
+everywhere; stare
+beat; street
+manhattan; happenin'; clappin'
+drop; pop
+miami; jammies; scampi
+got it; wallet
+miles; smile
+puerto rico; we go
+fleek; keep; leave
+paris; karats; fairest
+me; agree
+time; mind
+you; do
+bright; ice; like; night; white
+complicated; change it; waiting
+red; lipstick; first in
+around; out
+out; 'bout
+tight; night
+blue jeans; mood ring
+same; rain
+do; moves
+wants; drop; stop; got
+thought; park; heart
+weekend; keepin'; thinkin'
+up; love
+ledge; edge; this
 sleep; be
 hard; stars
 line; vine; signs; find
@@ -518,14 +538,6 @@ old; bold; sold; told
 lie; alive
 burn; turn; word
 burn; learned
-chains; rain
-for; more
-july; goodbye
-remain; rain
-folks; spokes
-lawn; gone
-dime; time
-stay; away
 disease; knees; please
 friend; benz
 light; tight
@@ -538,6 +550,26 @@ apart; heart
 mine; behind
 buying; dying; multiplying
 hanson; manson; mansions; ass in
+chains; rain
+for; more
+july; goodbye
+remain; rain
+folks; spokes
+lawn; gone
+dime; time
+stay; away
+tune; moon
+time; shine
+down; around
+see; me
+same; name
+star; are
+bed; head
+lies; patronize
+don't; won't
+hours; power
+see; me
+right; fight
 rain; insane
 shop; stop
 impulsive; compulsive
@@ -548,12 +580,6 @@ tiles; smile
 about; drought
 sun; fun
 pounds; ground
-tune; moon
-time; shine
-down; around
-see; me
-same; name
-star; are
 night; light
 burning; turning
 sleep; keep; weep
@@ -594,12 +620,11 @@ shy; by
 you; too
 goodbye; guy
 know; so
-docks; luck; tough; love
-day; pay
-got; not; lot; shot
-there; prayer; swear
-hock; tough
-away; someday
+hairdo; to; through
+wreck; makeup
+play; day
+up; shut
+breakthrough; mind to
 rent; cents; pets; cigarettes
 broom; room
 train; maine
@@ -607,37 +632,19 @@ shoes; dues
 found; around
 train; names
 town; around
-hairdo; to; through
-wreck; makeup
-play; day
-up; shut
-breakthrough; mind to
-yacht; apricot; gavotte
-naive; leave; me; coffee
-saratoga; nova scotia
-won; sun
-time; spy; wife
-see; seems; me
-war; more
-line; right
-times; eye; lying; blind; signs; tonight; invited
-shame; brave
-did; foolish
-satisfied; realize
-typical; unforgivable; invisible
-following; offering; suffering
-past; fast
-time; fine
-friends; ends
-give; is
-feel; real
-try; goodbye
-Z; carefully
-place; face
-V; free; lady; me; see
-down; around
-ride; mind
-fight; mind
+docks; luck; tough; love
+day; pay
+got; not; lot; shot
+there; prayer; swear
+hock; tough
+away; someday
+road; go
+best; test; question; lesson
+why; time
+right; life
+shelf; health
+mind; time
+trial; while
 unknown; comb; on
 explain; pain
 dedication; conversation
@@ -650,39 +657,9 @@ doubt; out
 us; love
 clear; year
 forever; never; together; other
-version; peverted
-eloquently; baby
-theater; mother
-gave; made; able
-know; told; hold
-died; alive
-remind; deny
-away; gave
-me; duplicity
-dinner; her
-face; replaced
-laid; me; fade
-girl; world
-guy; why
-can; man; am
-what; up
-time; mind
-tough; because; love
-toys; boys; choice
-girl; pearls
-in; been; win
-walking; talking
-fine; mine
-touch; much
-all; how
-trouble; gutter
-waterfalls; all
-precious; obsession
-see; me
-face; place
 time; fine; dime; prime
 call; doll; fall
-didn't; kidding
+didn't; kiddin'
 about; out
 loud; proud
 meal; feel
@@ -696,23 +673,10 @@ tricks; kicks
 diplomat; cat; that; at
 steal; feel
 steeple; people
-drinking; thinking
+drinkin'; thinkin'
 made; babe
 used; amused; refuse; lose
 conceal; feel
-sun; come; fun
-day; away
-sand; hand
-sea; ecstasy
-bones; along
-run; come; drum
-road; go
-best; test; question; lesson
-why; time
-right; life
-shelf; health
-mind; time
-trial; while
 land; stand
 alley; palais
 play; saturday
@@ -726,21 +690,31 @@ cried; died
 band; stand
 estate; wait
 could; would
-feeling; sings
-rise; cry
-know; go
-yours; for
-deserted; alerted
-alone; gone
-true; you
-overtime; line
-soul; go
-to; do
-twice; nice; lines
-death; best
-numb; come; young
-about it; without it
-more; love; oh
+yacht; apricot; gavotte
+naive; leave; me; coffee
+saratoga; nova scotia
+won; sun
+time; spy; wife
+girl; world
+guy; why
+can; man; am
+what; up
+time; mind
+tough; because; love
+toys; boys; choice
+girl; pearls
+in; been; win
+walking; talking
+fine; mine
+see; seems; me
+war; more
+line; right
+times; eye; lying; blind; signs; tonight; invited
+shame; brave
+did; foolish
+satisfied; realize
+typical; unforgivable; invisible
+following; offering; suffering
 guy; shy
 remain; say
 knees; please
@@ -752,6 +726,39 @@ need; realistically
 you; lose
 easy; believe me
 you; do
+sun; come; fun
+day; away
+sand; hand
+sea; ecstasy
+bones; along
+run; come; drum
+death; best
+numb; come; young
+about it; without it
+more; love; oh
+overtime; line
+soul; go
+to; do
+twice; nice; lines
+touch; much
+all; how
+trouble; gutter
+waterfalls; all
+precious; obsession
+see; me
+face; place
+past; fast
+time; fine
+friends; ends
+give; is
+feel; real
+try; goodbye
+Z; carefully
+place; face
+V; free; lady; me; see
+down; around
+ride; mind
+fight; mind
 told; roll
 shed; forehead
 dumb; thumb
@@ -768,9 +775,30 @@ yours; bored
 asked; gas
 place; change
 yep; concept
-try; sky
-do; too
-can; man
+feeling; sings
+rise; cry
+know; go
+yours; for
+deserted; alerted
+alone; gone
+true; you
+version; peverted
+eloquently; baby
+theater; mother
+gave; made; able
+know; told; hold
+died; alive
+remind; deny
+away; gave
+me; duplicity
+dinner; her
+face; replaced
+laid; me; fade
+you; new
+today; same; saying
+past; back; clicks
+back; lack
+lamps; chance
 flesh; address
 movies; envy
 bathroom; room
@@ -780,11 +808,9 @@ blood; us; buzz; lux
 bee; fantasy
 code; knows
 party; money
-you; new
-today; same; saying
-past; back; clicks
-back; lack
-lamps; chance
+try; sky
+do; too
+can; man
 crawled; walls
 lips; fingertips
 fire; desire
@@ -820,6 +846,49 @@ brow; cow
 fame; again
 hordes; broads
 bounds; clowns
+rock; clock
+hon'; one
+tonight; daylight
+four; more
+seven; heaven
+too; you
+then; again
+chance; dance
+smile; while
+shiver; deliver
+doorstep; one more step
+cried; bridge; inside; died
+bye; pie; dry; rye; die
+chevy; levee
+love; above
+so; slow
+rock n' roll; soul
+him; gym
+shoes; blues
+buck; truck; luck
+own; stone
+be; me
+queen; james dean
+down; crown
+adjourned; returned
+marx; park; dark
+swelter; shelter
+fast; grass; pass; cast
+perfume; tune
+dance; chance
+field; yield; revealed
+place; space
+again; friend
+quick; candlestick
+stage; rage
+hell; spell
+night; rite; delight
+blues; news
+away; play
+store; before
+screamed; dreamed
+spoken; broken
+most; ghost; coast
 dial; eyes
 receiver; believe
 old; control
@@ -830,6 +899,23 @@ me; badly
 ahead; bed
 out; about
 reel; feel
+mine; time
+stone; gone
+on; before
+dreams; name
+news; through
+town; found
+you; do
+that; back
+in; again
+you; knew
+thinkin'; breakin'
+door; floor; anymore
+try; justify
+is; did
+fool; you
+road; go
+say; made
 bang; same
 tonight; white
 sun; none
@@ -842,73 +928,33 @@ from; duller; color
 me; baby
 eye; white
 by; white
-mine; time
-stone; gone
-on; before
-dreams; name
-news; through
-town; found
-you; do
-that; back
-in; again
-you; knew
-thinking; breaking
-door; floor; anymore
-try; justify
-is; did
-fool; you
-road; go
-say; made
-fantasy; need
-beginning; living; meaning
-sea; me
-sky; cry
-power; hours; devour
-dream; machine
-night; right; sight
-near; here
-find; ride
-see; free
-stay; away
-around; found
-eyes; inside
-jack; back
-flowing; going
-heart; part
-bar; apart
-end; again
-rest; says
-home; alone
-say; way
-myself; help
-fire; hire
-spark; dark
-clearer; mirror
-place; face
-nowhere; somewhere
-this; is
-older; somewhere; shoulder
-right; tonight
-action; reaction
-look; book
-heart; dark; apart
-house; down; around
-out; downtown
-mall; wall; call
-out; crowd
-cry; lie
-older; colder
-wake up; mistake up
-dust; rust; adjust
-glowing; going
-beautiful; usual
-superficial; stereotypical; little
-man; damn
-mine; eyes
-goes; nose
-you; fool
-simple; unconditional; little
-yeah; damn
+ending; wending
+falling; calling
+nigh; my
+right; light
+face; fireplace
+room; bloom
+me; three
+die; by
+time; mind
+wall; all
+then; again
+bed; red
+two; you
+today; away
+tears; years
+would; good
+sure; door
+now; how
+together; better
+why oh; denial
+rise; cry
+feeling; sings
+know; go
+yours; for
+deserted; alerted
+alone; gone
+true; you
 atmosphere; hair
 rain; change
 moon; june
@@ -923,31 +969,14 @@ mind; find
 pride; fried
 chicken; sticking
 dance; romance
-five; line
-disguise; time
-hearts; smart
-fool; you
-lie; crime
-do; you
-mad; sad
-done; some
-few; through
-covers; lover
-fun; one
-sure; door
-now; how
-together; better
-why oh; denial
-more; door
-town; down
-taken; mistaken
-see; me; family
-lowly; slowly
-violence; silence
-bombs; guns
-fighting; crying
-breaking; taking
-theme; 1916
+beautiful; usual
+superficial; stereotypical; little
+man; damn
+mine; eyes
+goes; nose
+you; fool
+simple; unconditional; little
+yeah; damn
 sad; laugh; photograph
 car; before; lords
 today; away
@@ -957,9 +986,85 @@ cup; up
 hat; flat
 smoke; spoke
 small; all; hall
+break; shake
+call; bawl
+fall; all
+be; me
+face; place
+more; door
+town; down
+jack; back
+flowing; going
+heart; part
+bar; apart
+end; again
+rest; says
+home; alone
+fantasy; need
+beginning; living; meaning
+sea; me
+sky; cry
+power; hours; devour
+lips; fingertips
+show it; know it
+you; do
+crying; dying
+everyday; away
+hesitate; late
+do; you
+mine; shine
+two; you
+floor; for; more
+you; true; do
+too; you; cue
 boy; bye; try
 beside; by; time; terrifies
 religion; love
+cry; lie
+older; colder
+wake up; mistake up
+dust; rust; adjust
+glowin'; goin'
+house; down; around
+out; downtown
+mall; wall; call
+out; crowd
+taken; mistaken
+see; me; family
+lowly; slowly
+violence; silence
+bombs; guns
+fighting; crying
+breakin'; taking
+theme; 1916
+heart; starts
+brain; same
+right; night
+sleeping; dreaming
+bed; instead
+go; yo; solo
+high; tonight
+way; day
+flame; same
+lady; crazy
+fool; cruel
+fight; alright
+tight; night
+weekend; drinking
+disappear; here
+can; hand; sand
+kissing; reminiscing
+mama; drama
+shelf; myself
+kissing; kitchen
+dream; machine
+night; right; sight
+near; here
+find; ride
+see; free
+stay; away
+around; found
+eyes; inside
 weak; weeks
 trap; black
 wait; complaint
@@ -975,47 +1080,30 @@ goes; close; know
 lights; hide
 you; do; soon
 magical; on; control; zone
-ending; wending
-falling; calling
-nigh; my
-right; light
-face; fireplace
-room; bloom
-me; three
-break; shake
-call; bawl
-fall; all
-be; me
-face; place
-rise; cry
-feeling; sings
-know; go
-yours; for
-deserted; alerted
-alone; gone
-true; you
-indisposed; knows
-face; snake; disgrace
-stench; dead; again
-name; cream; scream
-sun; come
-damp; friend; men
-sleep; keep
-fear; disappear
-hesitate; late
+glad; bag
+long; on
+cage; age
+there; scared; repairs; snare
+choose; lose; crews
+you; tube; fuse; fictional
+lifeless; priceless
+life is; like it
+basics; naked; make this; nature
+piece; sea
+guide; eyes; mind
+mentor; remember
+dead; head
+five; line
+disguise; time
+hearts; smart
+fool; you
+lie; crime
 do; you
-mine; shine
-two; you
-floor; for; more
-you; true; do
-too; you; cue
-floor; anymore
-mind; time
-one; alone
-call; control
-now; how; without
-door; before
-one; drunk
+mad; sad
+done; some
+few; through
+covers; lover
+fun; one
 midnight; by
 v8; away
 her; sure
@@ -1026,6 +1114,55 @@ are; cars
 sound; down
 driveway; everyday; crazy
 home; on
+say; way
+myself; help
+fire; hire
+spark; dark
+clearer; mirror
+place; face
+nowhere; somewhere
+this; is
+older; somewhere; shoulder
+right; tonight
+action; reaction
+look; book
+heart; dark; apart
+indisposed; knows
+face; snake; disgrace
+stench; dead; again
+name; cream; scream
+sun; come
+damp; friend; men
+sleep; keep
+fear; disappear
+floor; anymore
+mind; time
+one; alone
+call; control
+now; how; without
+door; before
+one; drunk
+met you; issue
+meet; see
+heart; car; calls; bar
+closer; rover; shoulder; corner; stole; boulder; older; afford
+met you; left you
+insane; okay
+blink-182 song; tuscon
+roar; ignore; before; floor
+pretend; again
+wise; price
+pain; gained; anything
+break; make
+stronger; longer
+goal; soul
+grow; toe; embryo; go
+land; understand
+through; you
+untrue; you
+head; said
+plebian; through with me
+do; you
 talking; jaywalking
 lights; night
 cover; others
@@ -1035,13 +1172,14 @@ be; tease
 about; around; don't; town
 corner; uh huh
 sidewalk; up; off; not
-met you; issue
-meet; see
-heart; car; calls; bar
-closer; rover; shoulder; corner; stole; boulder; older; afford
-met you; left you
-insane; okay
-blink-182 song; tuscon
+long; c'mon
+give; live
+you; true
+be; me
+push; bush
+on; wrong
+moves; groove
+meaning; feeling
 late; brain; say
 dates; stay; say
 cruising; moving
@@ -1055,14 +1193,10 @@ fella; hella
 there; hair; yeah
 touch; love
 to; you
-long; c'mon
-give; live
-you; true
-be; me
-push; bush
-on; wrong
-moves; groove
-meaning; feeling
+somehow; now
+life; tonight
+understand; am
+lies; alive
 3; me
 fine; mine
 6; kicks
@@ -1070,6 +1204,13 @@ money; honey
 hair; stare; yeah
 see; me; we
 say; away
+phone; alone
+down; around
+walls; halls
+control; soul
+rains; in
+clear; here
+light; night
 knew; you; deja vu; true
 L.A.; Santa Fe; me
 night; right
@@ -1090,13 +1231,21 @@ ground; around
 then; again
 go; on
 cost; lost
-phone; alone
-down; around
-walls; halls
-control; soul
-rains; in
-clear; here
-light; night
+fruit; root
+breeze; trees
+south; mouth
+fresh; flesh
+pluck; suck
+drop; crop
+up; drunk; buzz
+call; long
+wait; band-aid
+pretend; him; in; again
+heart; apart
+him; friends
+love; glove
+pressure; whatever
+do; you; too
 baby; lady
 band; man; sand; hand
 eyed; smile
@@ -1119,6 +1268,34 @@ adieu; true; wooh
 failed; grail
 me; be
 night; mine
+right; mind
+together; forever
+die; goodbye
+night; tight; try; cry
+head; dead
+road; go
+realize; time
+try; I
+night; mind
+forget; cigarette
+tell; hell
+you; do
+forevermore; pore
+lord; more
+me; be
+away; say
+eyes; tight
+side; compromise
+sad; bad
+unacceptable; critical; physical; miracle
+here; clear
+gone; on
+love; up
+dreams; breathe
+head; said; sweat; did
+burn; learn
+sting; bring
+control; hold
 forever; never
 you; do
 lifted; shifted
@@ -1129,37 +1306,14 @@ over; shown her
 me; be
 side; dies
 to; you
-right; mind
-together; forever
-die; goodbye
-night; tight; try; cry
-head; dead
-road; go
-realize; time
-try; I
-unacceptable; critical; physical; miracle
-here; clear
-gone; on
-love; up
-dreams; breathe
-head; said; sweat; did
-burn; learn
-sting; bring
-control; hold
-night; mind
-forget; cigarette
-tell; hell
-you; do
-forevermore; pore
-lord; more
-gloves; love
-sky; why
-impossibility; may
-forget; regret
-gate; date
-laugh; epitaph
-suppose; knows
-tie; why
+face; snowflakes; taste
+end; rent; men
+say; A; face; wasting
+daydream; eighteen; pastries; scream; free
+hand; grams; land; man
+outside; fly
+raincoat; afloat; clothes; notes; throat; phone
+die; eye; life; tonight; line
 town; ground
 fronts; pumps; up
 memories; company
@@ -1177,18 +1331,18 @@ night; right
 went; spent
 love; of
 me; bittersweet
-face; snowflakes; taste
-end; rent; men
-say; A; face; wasting
-daydream; eighteen; pastries; scream; free
-hand; grams; land; man
-outside; fly
-raincoat; afloat; clothes; notes; throat; phone
-die; eye; life; tonight; line
 say; break; space; way
 roof; truth; you; do
 that; back
 fine; time; why
+gloves; love
+sky; why
+impossibility; may
+forget; regret
+gate; date
+laugh; epitaph
+suppose; knows
+tie; why
 way; away
 balcony; be
 home; belong
@@ -1196,6 +1350,11 @@ me; missouri
 change; waste
 true; through
 her; after
+down; sound
+doubt; now; out
+awakened; break it; taking
+embrace; grace
+face; away
 beat; be; thing
 dead; said
 yet; forget
@@ -1205,6 +1364,13 @@ things; mean
 world; girl
 fire; desire
 man; am
+revolution; evolution
+solution; contribution
+plan; can
+hate; wait
+constitution; institution
+head; instead
+mao; anyhow
 down; now
 true; you
 shy; light
@@ -1215,11 +1381,6 @@ flies; lives; surprise
 raised; haze; days
 compares; cares
 mistakes; made; taste
-down; sound
-doubt; now; out
-awakened; break it; taking
-embrace; grace
-face; away
 away; sunday
 today; away
 long; song
@@ -1236,6 +1397,25 @@ sheep; sleep
 long; wrong
 own; bones
 again; when; friends
+pronounce; ounce
+words; disturb
+real; three
+key; me
+guess; left
+floor; door
+style; smile
+phone; on
+someday; away; way
+crowd; out
+head; forget
+down; now
+weak; knees
+needing; deep in
+care; where
+please; me; need; sympathy
+alright; life
+up; some
+insecure; for
 me; naturally
 me; a to z
 spell; tell
@@ -1246,16 +1426,6 @@ rhyme; mind
 love; of; 'cause
 one; done
 compare; yeah
-down; now
-weak; knees
-needing; deep in
-care; where
-please; me; need; sympathy
-alright; life
-up; some
-insecure; for
-part; heart
-sweet; dream
 time; mine
 fly; die
 me; indefinitely; baby
@@ -1263,12 +1433,24 @@ on; strong
 shake me; baby
 stay; way
 again; end
+part; heart
+sweet; dream
 pain; can
 tomorrow; borrowed
 me; be
 make; fake
 high; right
 free; me
+machine; clean; seen
+eyes; lies; thighs
+share; air; there
+shaking; quaking; aching; making
+time; line; mine; kind
+applause; course; more
+down; round
+ring; swing
+mind; blind; find
+do; you; too
 curiosity; me
 got; spot; rocks
 heart; apart; start; hard
@@ -1279,16 +1461,6 @@ me; balcony; screen
 pocket; drop it
 cutoffs; song
 words; converse; works
-mind; blind; find
-do; you; too
-machine; clean; seen
-eyes; lies; thighs
-share; air; there
-shaking; quaking; aching; making
-time; line; mine; kind
-applause; course; more
-down; round
-ring; swing
 new orleans; evergreens
 wood; good
 well; bell
