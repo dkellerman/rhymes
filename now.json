@@ -1,6 +1,7 @@
 {
  "env": {
    "ELASTIC_ENDPOINT": "@elastic-endpoint",
-   "ELASTIC_INDEX": "rhymes"
+   "ELASTIC_INDEX": "@elastic-index",
+   "GA_ID": "@ga-id"
   }
 }
