@@ -6,5 +6,5 @@ node_modules/
 env/
 *.sqlite
 *.swp
-.env.local
+.env.development.local
 .now
