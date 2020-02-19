@@ -9,12 +9,14 @@ export const globalStyles = css`
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    padding: 5px;
+    padding: 8px;
+    width: 90vw;
+    max-width: 600px;
   }
 
   .info, .no-results {
-    font-size: 14px;
-    margin-top: 5px;
+    margin-top: 8px;
+    font-size: small;
   }
 
   ul {

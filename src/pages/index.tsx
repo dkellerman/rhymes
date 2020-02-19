@@ -52,7 +52,6 @@ const RhymesSearchPage = () => {
           debounceTimeout={300}
           onChange={e => setQuery(e.target.value)}
           placeholder="Search for rhymes used in actual songs..."
-          size={80}
         />
       </header>
 
@@ -60,8 +59,9 @@ const RhymesSearchPage = () => {
         {loading && '...' || (hasResults && (
           <>
             <div className="info">
-              { results.total } rhymes for
-              {' '}<strong>"{query}"</strong>.
+              { results.total } rhyme
+              { results.total > 1 ? 's' : '' }
+              {' '}for{' '}<strong>“{query}”</strong>.
             </div>
 
             <ul>

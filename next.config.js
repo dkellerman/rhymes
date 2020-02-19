@@ -5,7 +5,7 @@ const config = {
 };
 
 if (isDev) {
-  require('dotenv').config();
+  require('dotenv-flow').config();
   config.env = {
     ELASTIC_ENDPOINT: process.env.ELASTIC_ENDPOINT,
     ELASTIC_INDEX: process.env.ELASTIC_INDEX,
