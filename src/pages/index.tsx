@@ -46,9 +46,9 @@ const RhymesSearchPage = () => {
       </Head>
 
       <header>
-        <nav className="border split-nav fixed">
+        <nav className="split-nav fixed">
           <div className="nav-brand">
-            <h3><a href="/">Rhymes</a></h3>
+            <h3>Rhymes</h3>
           </div>
           <div>
             <DebounceInput

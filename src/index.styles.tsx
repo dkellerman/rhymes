@@ -1,6 +1,10 @@
 import { css } from 'styled-components';
 
 export const globalStyles = css`
+  nav {
+    background: aliceblue;
+  }
+
   header {
     height: 50px;
   }
