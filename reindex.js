@@ -8,7 +8,7 @@ const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
 
 async function reindex() {
-  const lines = fs.readFileSync('./rhymes.txt', 'utf8').split('\n');
+  const lines = fs.readFileSync('./data/rhymes.txt', 'utf8').split('\n');
   const freqs = {};
 
   for (const line of lines) {

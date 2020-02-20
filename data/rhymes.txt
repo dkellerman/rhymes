@@ -8,7 +8,7 @@ could; woods
 cared; share
 moves; blues
 wonder; thunder
-two; moves; lose
+2; moves; lose
 mama; want to; run through; on to; soon; off you
 down; cloud
 love; drug; up
@@ -218,11 +218,26 @@ about; stadium
 day; ok; say
 scam; hand; plans
 day; way
+sue; do; tube; loose
+el paso; hassle; castle
+texas; facts is; taxes; justice
+away; day; today
 out; now
 same; pain
 pretend; again
 home; chromosomes
 understand; strand
+nose; toes; knows; criminal
+sleepin'; creepin'
+knees; please
+you; to; cynical
+tough; rough; enough; puffed
+bad; sad; mad; dad; glad
+type; guy
+control; don't; role; animal; know
+me; she
+me; sees
+alone; cologne
 well; tell; fell
 wish; kiss; this
 holding; showin'; blowin'; going
@@ -480,6 +495,17 @@ fashion; smashin'
 joke; soaked; revoked; broke; choke; focus; close; hocus; pocus
 back; bushwhacked; attack; crack
 away; relate
+away; say; day; way; today
+hide; inside
+again; end
+tonight; light
+surprise; realize
+man; understand
+free; me
+know; grow; go
+lie; I
+wait; late
+do; through; you
 been; dream
 door; for
 from; belong
@@ -638,6 +664,11 @@ got; not; lot; shot
 there; prayer; swear
 hock; tough
 away; someday
+gone; song
+day; away; play
+gone; on
+by; sky
+cold; know
 road; go
 best; test; question; lesson
 why; time
@@ -782,6 +813,7 @@ yours; for
 deserted; alerted
 alone; gone
 true; you
+son; one
 version; peverted
 eloquently; baby
 theater; mother
@@ -1065,6 +1097,18 @@ see; free
 stay; away
 around; found
 eyes; inside
+hair; air; everywhere
+sun; everyone; done
+clouds; now; down; somehow
+recall; all
+moons; junes
+wheels; feel; real
+show; go; know
+way; away; day
+tears; fears
+proud; loud; crowds
+dreams; schemes
+strange; changed; gained
 weak; weeks
 trap; black
 wait; complaint
@@ -1148,7 +1192,7 @@ heart; car; calls; bar
 closer; rover; shoulder; corner; stole; boulder; older; afford
 met you; left you
 insane; okay
-blink-182 song; tuscon
+song; tuscon
 roar; ignore; before; floor
 pretend; again
 wise; price
