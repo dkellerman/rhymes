@@ -5,15 +5,33 @@
         "analysis": {
           "analyzer": {
             "synonym_analyzer": {
-              "tokenizer": "standard",
-              "filter": ["synonym_filter"]
+              "tokenizer": "whitespace",
+              "filter": ["lowercase", "synonym_filter"]
             }
           },
-          "filter" : {
-            "synonym_filter" : {
-              "type": "synonym_graph",
+          "filter": {
+            "synonym_filter": {
+              "type": "synonym",
               "lenient": true,
-              "synonyms": []
+              "updateable": true
+            }
+          }
+        }
+      }
+    },
+    "mappings": {
+      "entry": {
+        "properties": {
+          "doc": {
+            "properties": {
+              "word1": {
+                "type": "text",
+                "analyzer": "synonym_analyzer"
+              },
+              "word2": {
+                "type": "text",
+                "analyzer": "synonym_analyzer"
+              }
             }
           }
         }
