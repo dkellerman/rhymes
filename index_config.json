@@ -22,17 +22,13 @@
     "mappings": {
       "entry": {
         "properties": {
-          "doc": {
-            "properties": {
-              "word1": {
-                "type": "text",
-                "analyzer": "synonym_analyzer"
-              },
-              "word2": {
-                "type": "text",
-                "analyzer": "synonym_analyzer"
-              }
-            }
+          "word1": {
+            "type": "text",
+            "analyzer": "synonym_analyzer"
+          },
+          "word2": {
+            "type": "text",
+            "analyzer": "synonym_analyzer"
           }
         }
       }
