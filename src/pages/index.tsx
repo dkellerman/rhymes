@@ -46,16 +46,38 @@ const RhymesSearchPage = () => {
       </Head>
 
       <header>
-        <DebounceInput
-          type="search"
-          inputRef={searchInput}
-          debounceTimeout={300}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Search for rhymes used in actual songs..."
-        />
+        <nav className="border split-nav fixed">
+          <div className="nav-brand">
+            <h3><a href="/">Rhymes</a></h3>
+          </div>
+          <div>
+            <DebounceInput
+              type="search"
+              inputRef={searchInput}
+              debounceTimeout={300}
+              onChange={e => setQuery(e.target.value)}
+              placeholder="Search for rhymes used in actual songs..."
+            />
+          </div>
+          <div className="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1" />
+            <button>
+              <label htmlFor="collapsible1">
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+              </label>
+            </button>
+            <div className="collapsible-body">
+              <ul className="inline">
+                <li><a href="https://github.com/dkellerman/rhymes" target="_blank">Github</a> &#183;</li>
+                <li><a href="https://raw.githubusercontent.com/dkellerman/rhymes/master/data/songs.txt" target="_blank">Songs used</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
 
-      <main>
+      <main className="padding-top">
         {loading && '...' || (hasResults && (
           <>
             <div className="info">
@@ -64,16 +86,18 @@ const RhymesSearchPage = () => {
               {' '}for{' '}<strong>“{query}”</strong>.
             </div>
 
-            <ul>
+            <ul className="results padding-left">
               {results.hits.map(hit => (
-                <li key={hit.id}>
+                <li className="margin-bottom-small" key={hit.id}>
                   {hit.word}
                 </li>
               ))}
             </ul>
           </>
         ) || (
-          <div className="no-results">{query && 'No rhymes found.'}</div>
+          <div className="no-results">{query &&
+            `No rhymes found for “${query}”.`
+          }</div>
         ))}
       </main>
     </>

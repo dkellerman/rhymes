@@ -1,35 +1,35 @@
 import { css } from 'styled-components';
 
 export const globalStyles = css`
-  body {
-    font: 300 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  header {
+    height: 50px;
   }
 
   input[type=search] {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    padding: 8px;
-    width: 90vw;
-    max-width: 600px;
+    width: 80vw;
+    max-width: 310px;
   }
 
-  .info, .no-results {
-    margin-top: 8px;
-    font-size: small;
-  }
-
-  ul {
+  ul.results {
     display: flex;
     flex-flow: column wrap;
-    height: 50vh;
-    width: 33vw;
-    padding-left: 25px;
+    min-height: 50vh;
+    max-height: 70vh;
+    width: 50vw;
+  }
 
-    li {
-      margin-bottom: 3px;
-      padding: 5px;
-      margin: 0 5px 5px 0;
+  @media only screen and (max-width: 768px) {
+    header {
+      height: 100px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    input[type=search] {
+      max-width: 600px;
     }
   }
 `;

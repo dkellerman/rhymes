@@ -9,6 +9,7 @@ class MyDocument extends Document {
           <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
+          <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
           <style dangerouslySetInnerHTML={{__html: globalStyles}} />
           {process.env.GA_ID && (
             <>
@@ -23,7 +24,7 @@ class MyDocument extends Document {
           )}
         </Head>
 
-        <body>
+        <body className="padding">
           <Main />
           <NextScript />
         </body>
