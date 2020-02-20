@@ -1,3 +1,23 @@
 {
-  "rhymes": {}
+  "rhymes": {
+    "settings": {
+      "index": {
+        "analysis": {
+          "analyzer": {
+            "synonym_analyzer": {
+              "tokenizer": "standard",
+              "filter": ["synonym_filter"]
+            }
+          },
+          "filter" : {
+            "synonym_filter" : {
+              "type": "synonym_graph",
+              "lenient": true,
+              "synonyms": []
+            }
+          }
+        }
+      }
+    }
+  }
 }

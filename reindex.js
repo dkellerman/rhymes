@@ -8,7 +8,23 @@ const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
 
 async function reindex() {
+  const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n');
   const lines = fs.readFileSync('./data/rhymes.txt', 'utf8').split('\n');
+
+  // make synonyms for ing->in' endings
+  for (const line of lines) {
+    const words = line.trim().split(';').map(w => w.trim());
+    for (const w of words) {
+      let s;
+      if (w.endsWith("in'")) {
+        s = `${w};${w.replace(/\'$/, "g")}`;
+      } else if (w.endsWith("ing") && w.length > 5) {
+        s = `${w.replace(/g$/, "'")};${w}`;
+      }
+      if (!syns.includes(s)) syns.push(s);
+    }
+  }
+
   const freqs = {};
 
   for (const line of lines) {
@@ -18,6 +34,11 @@ async function reindex() {
       freqs[wid] = (freqs[wid] || 0) + 1;
     }
   }
+
+  // write rhyme frequencies
+  const rf = Object.entries(freqs).filter(x => x[1] > 1).sort((a, b) => b[1]-a[1]);
+  fs.writeFileSync('./data/rhyme_freq.txt',
+    rf.map(x => x.join(' => ').replace(';', '/')).join('\n'));
 
   const actions = [];
   for (const [id, freq] of Object.entries(freqs)) {
@@ -39,11 +60,12 @@ async function reindex() {
     });
   }
 
-  await createIndex(env.ELASTIC_INDEX, actions);
+  await createIndex(env.ELASTIC_INDEX, actions, syns.filter(Boolean));
 }
 
-async function createIndex(index, actions) {
+async function createIndex(index, actions, syns=[]) {
   const config = indexConfig[index];
+  config.settings.index.analysis.filter.synonym_filter.synonyms = syns;
   console.log('Indexing', actions.length, 'rhymes =>', index, '...');
   await elastic.indices.delete({ index }).catch(e => {});
   await elastic.indices.create({ index, body: config });
