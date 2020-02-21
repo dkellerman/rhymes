@@ -4,6 +4,7 @@ import Link from 'next/link';
 import uniqBy from 'lodash/uniqBy';
 import { DebounceInput } from 'react-debounce-input';
 import { useRouter, Router } from 'next/router';
+import { NavBar } from '../NavBar';
 
 type SearchResults = {
   total: number;
@@ -46,37 +47,15 @@ const RhymesSearchPage = () => {
         <title>Rhymes Search</title>
       </Head>
 
-      <header>
-        <nav className="split-nav fixed">
-          <div className="nav-brand">
-            <h3>Rhymes</h3>
-          </div>
-          <div>
-            <DebounceInput
-              type="search"
-              inputRef={searchInput}
-              debounceTimeout={300}
-              onChange={e => setQuery(e.target.value)}
-              placeholder="Search for rhymes used in actual songs..."
-            />
-          </div>
-          <div className="collapsible">
-            <input id="collapsible1" type="checkbox" name="collapsible1" />
-            <button>
-              <label htmlFor="collapsible1">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </label>
-            </button>
-            <div className="collapsible-body">
-              <ul className="inline">
-                <li><a href="https://github.com/dkellerman/rhymes" target="_blank">Github</a> &#183;</li>
-                <li><a href="https://raw.githubusercontent.com/dkellerman/rhymes/master/data/songs.txt" target="_blank">Songs used</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <NavBar>
+        <DebounceInput
+          type="search"
+          inputRef={searchInput}
+          debounceTimeout={300}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search for rhymes used in actual songs..."
+        />
+      </NavBar>
 
       <main className="padding-top">
         {loading && '...' || (hasResults && (

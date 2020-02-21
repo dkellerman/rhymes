@@ -8,12 +8,12 @@ const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
 
 async function reindex() {
-  const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n')
+  const syns = fs.readFileSync('./public/data/synonyms.txt', 'utf8').split('\n')
     .filter(line => !line.trim().startsWith('#'))
     .map(line => line.split(';').map(tok => tok.trim()).filter(Boolean))
     .filter(synset => synset && synset.length);
 
-  const rhymes = fs.readFileSync('./data/rhymes.txt', 'utf8').split('\n');
+  const rhymes = fs.readFileSync('./public/data/rhymes.txt', 'utf8').split('\n');
 
   for (const line of rhymes) {
     const words = line.trim().split(';').map(w => w.trim());
@@ -52,7 +52,7 @@ async function reindex() {
 
   // write rhyme frequencies
   const rf = Object.entries(freqs).filter(x => x[1] > 1).sort((a, b) => b[1]-a[1]);
-  fs.writeFileSync('./data/rhyme_freq.txt',
+  fs.writeFileSync('./public/data/rhyme_freq.txt',
     rf.map(x => x.join(' => ').replace(';', '/')).join('\n'));
 
   const actions = [];
