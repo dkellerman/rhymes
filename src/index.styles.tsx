@@ -22,7 +22,13 @@ export const globalStyles = css`
     flex-flow: column wrap;
     min-height: 50vh;
     max-height: 70vh;
-    width: 50vw;
+    width: 80vw;
+ }
+
+  @media only screen and (max-width: 480px) {
+    ul.results {
+      flex-wrap: nowrap;
+    }
   }
 
   @media only screen and (max-width: 768px) {
