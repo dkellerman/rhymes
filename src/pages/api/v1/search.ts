@@ -27,7 +27,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         { 'doc.freq': 'desc' },
         '_score',
       ],
-      _source: [ 'doc.word1', 'doc.word2', 'doc.freq' ],
+      _source: [ 'doc.id', 'doc.word1', 'doc.word2', 'doc.freq' ],
     },
   });
 
