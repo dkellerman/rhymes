@@ -8,26 +8,41 @@ const makePairs = (arr) =>
   arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
 
 async function reindex() {
-  const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n');
-  const lines = fs.readFileSync('./data/rhymes.txt', 'utf8').split('\n');
+  const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n')
+    .filter(line => !line.trim().startsWith('#'))
+    .map(line => line.split(';').map(tok => tok.trim()).filter(Boolean))
+    .filter(synset => synset && synset.length);
 
-  // make synonyms for ing->in' endings
-  for (const line of lines) {
+  const rhymes = fs.readFileSync('./data/rhymes.txt', 'utf8').split('\n');
+
+  for (const line of rhymes) {
     const words = line.trim().split(';').map(w => w.trim());
-    for (const w of words) {
-      let s;
-      if (w.endsWith("in'")) {
-        s = `${w};${w.replace(/\'$/, "g")}`;
-      } else if (w.endsWith("ing") && w.length > 5) {
-        s = `${w.replace(/g$/, "'")};${w}`;
+    for (const word of words) {
+      let syn;
+      // *ing -> *in'
+      if (word.endsWith("in'")) {
+        syn = [word, word.replace(/\'$/, "g")];
+      } else if (word.endsWith("ing") && word.length > 5) {
+        syn = [word.replace(/g$/, "'"), word];
       }
-      if (!syns.includes(s)) syns.push(s);
+      if (!syns.includes(syn)) syns.push(syn);
+
+      // a-going -> going
+      // mercedes-benz -> mercedes benz
+      if (word.indexOf('-') > -1) {
+        if (word.startsWith('a-')) {
+          syn = [word, word.substring(2)];
+        } else {
+          syn = [word, word.replace('-', ' ')];
+        }
+        if (!syns.includes(syn)) syns.push(syn);
+      }
     }
   }
 
   const freqs = {};
 
-  for (const line of lines) {
+  for (const line of rhymes) {
     const words = line.split(';').map(t => t.trim().toLowerCase());
     for (const pair of makePairs(words)) {
       const wid = pair.sort().join(';');
@@ -64,11 +79,11 @@ async function reindex() {
 }
 
 async function createIndex(index, actions, syns=[]) {
-  const config = indexConfig[index];
-  config.settings.index.analysis.filter.synonym_filter.synonyms = syns;
+  indexConfig.settings.index.analysis.filter.synonym_filter.synonyms =
+    syns.map(synset => synset.join(',')).filter(Boolean);
   console.log('Indexing', actions.length, 'rhymes =>', index, '...');
   await elastic.indices.delete({ index }).catch(e => {});
-  await elastic.indices.create({ index, body: config });
+  await elastic.indices.create({ index, body: indexConfig });
 
   // this doesn't index all docs for some reason:
   // await elastic.bulk({ body: actions });

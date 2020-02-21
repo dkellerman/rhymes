@@ -1,34 +1,36 @@
 {
-  "rhymes": {
-    "settings": {
-      "index": {
-        "analysis": {
-          "analyzer": {
-            "synonym_analyzer": {
-              "tokenizer": "whitespace",
-              "filter": ["lowercase", "synonym_filter"]
-            }
-          },
-          "filter": {
-            "synonym_filter": {
-              "type": "synonym",
-              "lenient": true,
-              "updateable": true
-            }
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "synonym_analyzer": {
+            "tokenizer": "whitespace",
+            "filter": ["lowercase", "synonym_filter"]
+          }
+        },
+        "filter": {
+          "synonym_filter": {
+            "type": "synonym",
+            "lenient": true,
+            "updateable": true
           }
         }
       }
-    },
-    "mappings": {
-      "entry": {
-        "properties": {
-          "word1": {
-            "type": "text",
-            "analyzer": "synonym_analyzer"
-          },
-          "word2": {
-            "type": "text",
-            "analyzer": "synonym_analyzer"
+    }
+  },
+  "mappings": {
+    "entry": {
+      "properties": {
+        "doc": {
+          "properties": {
+            "word1": {
+              "type": "text",
+              "analyzer": "synonym_analyzer"
+            },
+            "word2": {
+              "type": "text",
+              "analyzer": "synonym_analyzer"
+            }
           }
         }
       }
