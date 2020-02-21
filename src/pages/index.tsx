@@ -96,9 +96,10 @@ async function fetchRhymes(q): Promise<SearchResults> {
   const { results } = await resp.json();
 
   const uniqueHits = uniqBy(results.hits.hits.map(hit => {
+    const qq = q.trim().toLowerCase();
     const doc = hit._source.doc;
-    const word = doc.word1 === q ? doc.word2 :
-                 doc.word2 === q ? doc.word1 :
+    const word = doc.word1 === qq ? doc.word2 :
+                 doc.word2 === qq ? doc.word1 :
                  null;
     if (!word) {
       return null;
