@@ -8,8 +8,9 @@ import { useRouter, Router } from 'next/router';
 type SearchResults = {
   total: number;
   hits: Array<{
-    id: string,
-    word: string,
+    id: string;
+    word: string;
+    freq: number;
   }>;
 };
 
@@ -89,7 +90,14 @@ const RhymesSearchPage = () => {
             <ul className="results padding-left">
               {results.hits.map(hit => (
                 <li className="margin-bottom-small" key={hit.id}>
-                  {hit.word}
+                  <span className={
+                    hit.freq <= 1 && 'text-muted' ||
+                    hit.freq >= 5 && 'background-success' ||
+                    'text-primary'
+                  } style={{padding: 3}}>{hit.word}</span>
+                  <small className="text-muted">
+                    &nbsp;&nbsp;({hit.freq})
+                  </small>
                 </li>
               ))}
             </ul>
