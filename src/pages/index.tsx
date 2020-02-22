@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import uniqBy from 'lodash/uniqBy';
 import { DebounceInput } from 'react-debounce-input';
-import { useRouter, Router } from 'next/router';
 import { NavBar } from '../NavBar';
 
 type SearchResults = {
@@ -15,10 +14,9 @@ type SearchResults = {
   }>;
 };
 
-const RhymesSearchPage = () => {
-  const router = useRouter();
-  const searchInput = React.useRef<HTMLInputElement|null>(null);
-  const [query, setQuery] = React.useState('');
+const RhymesSearchPage = ({ initialQuery = '' }) => {
+  const searchInput = React.useRef<HTMLInputElement|null>();
+  const [query, setQuery] = React.useState(initialQuery);
   const [results, setResults] = React.useState<SearchResults|null>(null);
   const [loading, setLoading] = React.useState(false);
 
@@ -52,6 +50,7 @@ const RhymesSearchPage = () => {
           type="search"
           inputRef={searchInput}
           debounceTimeout={300}
+          value={query}
           onChange={e => setQuery(e.target.value)}
           placeholder="Search for rhymes used in actual songs..."
         />
@@ -89,6 +88,12 @@ const RhymesSearchPage = () => {
       </main>
     </>
   );
+};
+
+RhymesSearchPage.getInitialProps = ({ req, query }) => {
+  return {
+    initialQuery: query.q || '',
+  };
 };
 
 async function fetchRhymes(q): Promise<SearchResults> {

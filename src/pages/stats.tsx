@@ -27,14 +27,14 @@ const StatsPage = () => {
   React.useEffect(() => {
     setLoading(true);
     Promise.all([
-      fetch('/data/songs.txt').then(resp => resp.text()),
-      fetch('/data/rhymes.txt').then(resp => resp.text()),
-      fetch('/data/rhyme_freq.txt').then(resp => resp.text()),
+      fetchLines('/data/songs.txt'),
+      fetchLines('/data/rhymes.txt'),
+      fetchLines('/data/rhyme_freq.txt'),
     ]).then(([songs, rhymes, rfreq]) => {
       setData({
-        songs: songs.split('\n').map(l => l.split(' - ')),
-        rhymes: rhymes.split('\n').map(l => l.split(';')),
-        rfreq: rfreq.split('\n').map(l => l.split(' => ')),
+        songs: songs.map(l => l.split(' - ')),
+        rhymes: rhymes.map(l => l.split(';')),
+        rfreq: rfreq.map(l => l.split(' => ')),
       });
       setLoading(false);
     });
@@ -92,5 +92,11 @@ const StatsPage = () => {
     </>
   );
 };
+
+async function fetchLines(f) {
+  return fetch(f)
+    .then(resp => resp.text())
+    .then(txt => txt.split('\n'));
+}
 
 export default StatsPage;
