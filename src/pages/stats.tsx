@@ -58,7 +58,7 @@ const StatsPage = () => {
           <ul>
             <Li>
               <Link href="/data/rhyme_freq.txt"><a>Most common rhymes</a></Link>{' '}
-              <small className="text-muted">({ data.rfreq.length })</small>
+              <small className="text-muted">({ data.rfreq.length } total)</small>
               <SubList>
                 <small className="text-muted">{
                   data.rfreq.slice(0, 20).map(([r, f]) => (
@@ -69,7 +69,7 @@ const StatsPage = () => {
             </Li>
             <Li>
               <Link href="/data/songs.txt"><a>All songs</a></Link>{' '}
-              <small className="text-muted">({ data.songs.length })</small>
+              <small className="text-muted">({ data.songs.length } total)</small>
               <SubList>
                 <small className="text-muted">{
                   data.songs.sort((a, b) => Math.random() > .5 ? -1 : 1)
@@ -81,7 +81,7 @@ const StatsPage = () => {
             </Li>
             <Li>
               <Link href="/data/rhymes.txt"><a>All rhyme sets</a></Link>{' '}
-              <small className="text-muted">({ data.rhymes.length })</small>
+              <small className="text-muted">({ data.rhymes.length } total)</small>
             </Li>
             <Li>
               <Link href="/data/synonyms.txt"><a>Synonyms</a></Link>
