@@ -30,6 +30,7 @@ Panama - Van Halen
 For What It's Worth - Buffalo Springfield
 Cold, Cold Heart - Hank Williams
 The Way It Is - Bruce Hornsby
+Ocean Eyes - Billie Eilish
 Grenade - Bruno Mars
 Brown Eyed Girl - Van Morrison
 Float On - Modest Mouse
@@ -51,6 +52,7 @@ Ooh Baby Baby - Smokey Robinson
 I Want a New Drug - Huey Lewis & The News
 Don't Look Back in Anger - Oasis
 Alison - Elvis Costello
+Rocket Man - Elton John
 Storm Warning - Hunter Hayes
 Blackbird - The Beatles
 Pretty Noose - Soundgarden
@@ -93,6 +95,7 @@ That's What I Like - Bruno Mars
 Whatever She's Got - David Nail
 Girls, Girls, Girls - Mötley Crüe
 Counting Stars - OneRepublic
+Make You Feel My Love - Bob Dylan
 You Get What You Give - New Radicals
 America - Simon & Garfunkel
 Broken Bicycles - Tom Waits
@@ -109,6 +112,7 @@ King of the Road - Roger Miller
 Livin' On A Prayer - Bon Jovi
 More Than A Feeling - Boston
 Good Riddance - Green Day
+Roxanne - The Police
 Mad World - Gary Jules
 Islands in the Stream - Kenny Rogers & Dolly Parton
 With A Little Help From My Friends - The Beatles
@@ -139,6 +143,7 @@ Royals - Lorde
 Imagine - John Lennon
 I'm A Believer - Neil Diamond
 I Still Haven't Found What I'm Looking For - U2
+Criminal - Fiona Apple
 Already Gone - Eagles
 Night's On Fire - David Nail
 Open Your Heart - Madonna
@@ -156,6 +161,7 @@ Leaving Las Vegas - Sheryl Crow
 I'm On Fire - Bruce Springsteen
 He Stopped Loving Her Today - George Jones
 Hey Ya! - OutKast
+If I Ain't Got You - Alicia Keys
 Jump - Van Halen
 Drops Of Jupiter - Train
 Fresh Eyes - Andy Grammer
@@ -185,6 +191,7 @@ Sunday Morning - Maroon 5
 Clint Eastwood - Gorillaz
 Queen Of Hearts - Juice Newton
 Countin' Cars - David Nail
+Hit the Road Jack - Ray Charles
 Dancing In The Dark - Bruce Springsteen
 Black Hole Sun - Soundgarden
 Need You Now - Lady Antebellum
@@ -193,6 +200,7 @@ I Am Woman - Helen Reddy
 Cry Me A River - Julie London
 Downtown - Lady Antebellum
 Let's Get In On - Marvin Gaye
+Creep - Radiohead
 Shake It Off - Taylor Swift
 Problem - Ariana Grande
 Iris - Goo Goo Dolls
@@ -208,8 +216,11 @@ Tiny Dancer - Elton John
 Honey, I'm Good - Andy Grammer
 Nothing's Gonna Stop Us Now - Starship
 Jolene - Dolly Parton
+Don't You Want Me - The Human League
+Let's Stay Together - Al Green
 End Of The Road - Boyz II Men
 Seven Nation Army - The White Stripes
+Rocky Raccoon - The Beatles
 Rosanna - Toto
 Harder To Breathe - Maroon 5
 Marry Me - Train
@@ -232,6 +243,7 @@ Send My Love (To Your New Lover) - Adele
 Sunday Bloody Sunday - U2
 Stereo Hearts - Gym Class Heroes
 Innocent When You Dream - Tom Waits
+Wild World - Cat Stevens
 Lost in the Light - Bahamas
 Hotel Key - Old Dominion
 Living For The City - Stevie Wonder
@@ -242,6 +254,7 @@ I'm Every Woman - Chaka Khan
 Always Be My Baby - Mariah Carey
 When I Grow Too Old to Dream - Nat King Cole
 Easy - Commodores
+Bennie and the Jets - Elton John
 You Shook Me All Night Long - AC/DC
 Out of My Head - Fastball
 Snapback - Old Dominion

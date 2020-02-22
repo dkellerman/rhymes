@@ -25,7 +25,10 @@ async function reindex() {
       } else if (word.endsWith("ing") && word.length > 5) {
         syn = [word.replace(/g$/, "'"), word];
       }
-      if (!syns.includes(syn)) syns.push(syn);
+
+      if (!syns.find(s => s && syn && s.join('') === syn.join(''))) {
+        syns.push(syn);
+      }
 
       // a-going -> going
       // mercedes-benz -> mercedes benz
@@ -35,7 +38,10 @@ async function reindex() {
         } else {
           syn = [word, word.replace('-', ' ')];
         }
-        if (!syns.includes(syn)) syns.push(syn);
+
+        if (!syns.find(s => s && syn && s.join('') === syn.join(''))) {
+          syns.push(syn);
+        }
       }
     }
   }

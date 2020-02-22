@@ -213,6 +213,8 @@ man; stand
 do; rules
 law; four; more; far; bar
 mind; time; line
+time; eyes; skies; high
+blind; mind; time; mine; eyes
 give; live; kiss
 trash; ask; understand
 did; is
@@ -346,6 +348,13 @@ valentines; mine
 you; true
 cake; take
 say; way
+night; flight; kite
+a.m.; then
+wife; flight
+time; find
+man; am
+home; no
+kids; did
 west; dress
 hair; fair
 july; mind
@@ -631,6 +640,14 @@ old; bold; sold; told
 lie; alive
 burn; turn; word
 burn; learned
+face; case; embrace
+appear; tears; years
+yet; met
+wrong; belong
+blue; avenue; do
+sea; free
+regret; yet
+true; do; you
 disease; knees; please
 friend; benz
 light; tight
@@ -743,6 +760,10 @@ right; life
 shelf; health
 mind; time
 trial; while
+light; night
+tonight; right
+knew; to
+made; make
 unknown; comb; on
 explain; pain
 dedication; conversation
@@ -755,6 +776,12 @@ doubt; out
 us; love
 clear; year
 forever; never; together; other
+bed; head
+lies; patronize
+don't; won't
+hours; power
+see; me
+right; fight
 time; fine; dime; prime
 call; doll; fall
 didn't; kiddin'
@@ -927,6 +954,16 @@ in; been; win
 walking; talking
 fine; mine
 tough; love; because
+bad; sad
+man; can
+sins; begin
+defense; against
+am; hand
+done; come
+deny; high
+ends; begin
+way; pay; play; stay; say
+go; know
 you; true
 shelf; yourself
 gone; strong; song
@@ -1065,6 +1102,11 @@ sure; door
 now; how
 together; better
 why oh; denial
+fame; game
+before; bore
+rings; everything; nothing
+young; love
+be; me
 rise; cry
 feeling; sings
 know; go
@@ -1247,6 +1289,10 @@ are; cars
 sound; down
 driveway; everyday; crazy
 home; on
+mean; seen
+so; go
+way; day
+understood; good
 say; way
 myself; help
 fire; hire
@@ -1313,6 +1359,8 @@ push; bush
 on; wrong
 moves; groove
 meaning; feeling
+eye; cry
+control; soul
 late; brain; say
 dates; stay; say
 cruising; moving
@@ -1425,6 +1473,18 @@ crazy; me
 know; go
 ooh; you; do
 forever; ever
+you; new; too; true
+see; me; need
+find; mind
+you; do; new
+me; seems
+together; forever
+to; untrue
+together; whether
+bad; sad
+break up; make up
+somebody; me; see
+you; do
 right; mind
 together; forever
 die; goodbye
@@ -1439,6 +1499,22 @@ tell; hell
 you; do
 forevermore; pore
 lord; more
+guy; eye
+room; saloon
+room; raccoon
+come; gun
+bible; rival; revival
+seems; dreams
+magill; lil
+fancy; nancy
+man; dan
+in; grin
+hoedown; showdown
+hot; shot
+in; gin
+match; scratch
+table; able
+out; doubt
 me; be
 away; say
 eyes; tight
@@ -1566,6 +1642,13 @@ box; walk; cops; stop
 mad at me; batteries
 make; interstate
 behind; find; mine; mind
+you; new
+leavin'; grievin'
+care; wear; there
+smile; child
+do; two
+sad; bad
+care; there; beware
 light; night
 words; heard
 too; do; you
@@ -1618,6 +1701,13 @@ me; be
 make; fake
 high; right
 free; me
+together; weather
+around; sound
+yet; jets
+boots; suit
+keen; magazine
+faithless; ageless
+along; wrong
 machine; clean; seen
 eyes; lies; thighs
 share; air; there
