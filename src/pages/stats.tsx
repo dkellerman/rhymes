@@ -5,9 +5,10 @@ import Link from 'next/link';
 import { NavBar } from '../NavBar';
 
 type Stats = {
-  songs: any[],
-  rhymes: any[],
-  rfreq: any[],
+  songs: any[];
+  rhymes: any[];
+  rfreq: any[];
+  wfreq: any[];
 };
 
 const Li = styled.li.attrs({
@@ -30,15 +31,20 @@ const StatsPage = () => {
       fetchLines('/data/songs.txt'),
       fetchLines('/data/rhymes.txt'),
       fetchLines('/data/rhyme_freq.txt'),
-    ]).then(([songs, rhymes, rfreq]) => {
+      fetchLines('/data/word_freq.txt'),
+    ]).then(([songs, rhymes, rfreq, wfreq]) => {
       setData({
         songs: songs.map(l => l.split(' - ')),
         rhymes: rhymes.map(l => l.split(';')),
         rfreq: rfreq.map(l => l.split(' => ')),
+        wfreq: wfreq.map(l => l.split(' => ')),
       });
       setLoading(false);
     });
   }, []);
+
+  const totalRhymes: number = data.rhymes?.reduce((acc, val) =>
+    (acc || 0) + (val.length - 1), 0) || 0;
 
   return (
     <>
@@ -58,10 +64,26 @@ const StatsPage = () => {
           <ul>
             <Li>
               <Link href="/data/rhyme_freq.txt"><a>Most common rhymes</a></Link>{' '}
-              <small className="text-muted">({ data.rfreq.length } total)</small>
+              <small className="text-muted">
+                ({ data.rfreq.length } occurring more than once
+                out of ~{ totalRhymes } pairs)
+              </small>
               <SubList>
                 <small className="text-muted">{
                   data.rfreq.slice(0, 20).map(([r, f]) => (
+                    `${r} (${f})`
+                  )).join(' • ')} …
+                </small>
+              </SubList>
+            </Li>
+            <Li>
+              <Link href="/data/word_freq.txt"><a>Most common words</a></Link>{' '}
+              <small className="text-muted">
+                (~{ data.wfreq.length } unique non-stop words, occurring more than once)
+              </small>
+              <SubList>
+                <small className="text-muted">{
+                  data.wfreq.slice(0, 30).map(([r, f]) => (
                     `${r} (${f})`
                   )).join(' • ')} …
                 </small>
@@ -73,7 +95,7 @@ const StatsPage = () => {
               <SubList>
                 <small className="text-muted">{
                   data.songs.sort((a, b) => Math.random() > .5 ? -1 : 1)
-                    .slice(0, 10).map(([title,]) => (
+                    .slice(0, 20).map(([title,]) => (
                     `${title}`
                   )).join(' • ')} …
                 </small>
@@ -85,6 +107,9 @@ const StatsPage = () => {
             </Li>
             <Li>
               <Link href="/data/synonyms.txt"><a>Synonyms</a></Link>
+            </Li>
+            <Li>
+              <Link href="/data/stop_words.json"><a>Stop words</a></Link>
             </Li>
           </ul>
         )}
