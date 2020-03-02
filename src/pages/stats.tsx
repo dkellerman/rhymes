@@ -79,7 +79,7 @@ const StatsPage = () => {
             <Li>
               <Link href="/data/word_freq.txt"><a>Most common words</a></Link>{' '}
               <small className="text-muted">
-                (~{ data.wfreq.length } unique non-stop words, occurring more than twice, no. of songs appearing in)
+                (~{ data.wfreq.length } unique words, occurring more than twice, no. of songs appearing in)
               </small>
               <SubList>
                 <small className="text-muted">{
