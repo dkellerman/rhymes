@@ -82,7 +82,7 @@ const RhymesSearchPage = ({ initialQuery = '' }) => {
           </>
         ) || (
           <div className="no-results">{query &&
-            `No rhymes found for “${query}”.`
+            `“${query}” was not rhymed in our database of ~250 songs.`
           }</div>
         ))}
       </main>
