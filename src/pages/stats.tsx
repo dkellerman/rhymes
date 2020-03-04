@@ -28,13 +28,13 @@ const StatsPage = () => {
   React.useEffect(() => {
     setLoading(true);
     Promise.all([
-      fetchLines('/data/songs.txt'),
-      fetchLines('/data/rhymes.txt'),
-      fetchLines('/data/rhyme_freq.txt'),
-      fetchLines('/data/word_freq.txt'),
+      fetchLines('/api/v1/data?f=songs'),
+      fetchLines('/api/v1/data?f=rhymes'),
+      fetchLines('/api/v1/data?f=rhyme_freq'),
+      fetchLines('/api/v1/data?f=word_freq'),
     ]).then(([songs, rhymes, rfreq, wfreq]) => {
       setData({
-        songs: songs.map(l => l.split(' - ')),
+        songs: songs.map(l => l.split(';')),
         rhymes: rhymes.map(l => l.split(';')),
         rfreq: rfreq.map(l => l.split(' => ')),
         wfreq: wfreq.map(l => l.split(' => ')),
@@ -63,7 +63,7 @@ const StatsPage = () => {
         {loading && '...' || (
           <ul>
             <Li>
-              <Link href="/data/rhyme_freq.txt"><a>Most common rhymes</a></Link>{' '}
+              <Link href="/api/v1/data?f=rhyme_freq"><a>Most common rhymes</a></Link>{' '}
               <small className="text-muted">
                 ({ data.rfreq.length } occurring more than once
                 out of ~{ totalRhymes } pairs)
@@ -77,7 +77,7 @@ const StatsPage = () => {
               </SubList>
             </Li>
             <Li>
-              <Link href="/data/word_freq.txt"><a>Most common words</a></Link>{' '}
+              <Link href="/api/v1/data?f=word_freq"><a>Most common words</a></Link>{' '}
               <small className="text-muted">
                 (~{ data.wfreq.length } unique words, occurring more than twice, no. of songs appearing in)
               </small>
@@ -90,7 +90,7 @@ const StatsPage = () => {
               </SubList>
             </Li>
             <Li>
-              <Link href="/data/songs.txt"><a>All songs</a></Link>{' '}
+              <Link href="/api/v1/data?f=songs"><a>All songs</a></Link>{' '}
               <small className="text-muted">({ data.songs.length } total)</small>
               <SubList>
                 <small className="text-muted">{
@@ -102,14 +102,14 @@ const StatsPage = () => {
               </SubList>
             </Li>
             <Li>
-              <Link href="/data/rhymes.txt"><a>All rhyme sets</a></Link>{' '}
+              <Link href="/api/v1/data?f=rhymes"><a>All rhyme sets</a></Link>{' '}
               <small className="text-muted">({ data.rhymes.length } total)</small>
             </Li>
             <Li>
-              <Link href="/data/synonyms.txt"><a>Synonyms</a></Link>
+              <Link href="/api/v1/data?f=synonyms"><a>Synonyms</a></Link>
             </Li>
             <Li>
-              <Link href="/data/stop_words.json"><a>Stop words</a></Link>
+              <Link href="/api/v1/data?f=stop_words"><a>Stop words</a></Link>
             </Li>
           </ul>
         )}
