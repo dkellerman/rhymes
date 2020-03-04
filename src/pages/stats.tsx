@@ -108,9 +108,6 @@ const StatsPage = () => {
             <Li>
               <Link href="/api/v1/data?f=synonyms"><a>Synonyms</a></Link>
             </Li>
-            <Li>
-              <Link href="/api/v1/data?f=stop_words"><a>Stop words</a></Link>
-            </Li>
           </ul>
         )}
       </main>

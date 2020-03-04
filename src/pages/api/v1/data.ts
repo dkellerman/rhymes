@@ -10,8 +10,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   let result = '';
 
   if ([
-    'songs', 'rhymes', 'rhyme_freq', 'word_freq', 'synonyms',
-    'stop_words'
+    'songs',
+    'rhymes',
+    'rhyme_freq',
+    'word_freq',
+    'synonyms',
   ].includes(f)) {
     result = readFileSync(`./data/${f}.txt`, 'utf8');
   }

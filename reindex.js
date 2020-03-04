@@ -7,10 +7,7 @@ const indexConfig = require('./index_config.json');
 
 async function reindex() {
   const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n')
-    .filter(line => !line.trim().startsWith('#'))
-    .map(line => line.split(';').map(tok => tok.trim()).filter(Boolean))
-    .filter(synset => synset && synset.length)
-    .filter(Boolean);
+    .map(s => s.split(';'));
   const rhymeFreqs = fs.readFileSync('./data/rhyme_freq.txt', 'utf8').split('\n');
 
   const actions = [];
@@ -41,7 +38,7 @@ async function reindex() {
 
 async function createIndex(index, actions, syns=[]) {
   indexConfig.settings.index.analysis.filter.synonym_filter.synonyms =
-    syns.map(synset => synset.join(',')).filter(Boolean);
+    syns.filter(Boolean).map(synset => synset.join(','));
   console.log('Indexing', actions.length, 'rhymes =>', index, '...');
   await elastic.indices.delete({ index }).catch(e => {});
   await elastic.indices.create({ index, body: indexConfig });
