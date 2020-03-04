@@ -36,7 +36,7 @@ async function reindex() {
     });
   }
 
-  // await createIndex(env.ELASTIC_INDEX, actions, syns);
+  await createIndex(env.ELASTIC_INDEX, actions, syns);
 }
 
 async function createIndex(index, actions, syns=[]) {
