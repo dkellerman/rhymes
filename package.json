@@ -26,7 +26,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "reindex": "NODE_ENV=development node ./reindex.js"
+
+    "fetch": "NODE_ENV=development node ./scripts/fetch_data.js",
+    "process": "NODE_ENV=development node ./scripts/process_data.js",
+    "reindex": "NODE_ENV=development node ./scripts/reindex.js"
   },
   "author": "",
   "license": "ISC"

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const env = require('./next.config').env;
+const env = require('../next.config').env;
 const { Client: ESClient } = require('@elastic/elasticsearch')
 const elastic = new ESClient({ node: env.ELASTIC_ENDPOINT });
 const indexConfig = require('./index_config.json');
