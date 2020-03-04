@@ -82,7 +82,12 @@ const RhymesSearchPage = ({ initialQuery = '' }) => {
           </>
         ) || (
           <div className="no-results">{query &&
-            `“${query}” was not rhymed in our database of ~250 songs.`
+            <>
+              “{query}” was not rhymed{' '}
+              <strong>even once</strong>{' '}
+              in our database of ~250 songs!{' '}
+              <Link href="/stats"><a>See the stats and songs here.</a></Link>
+            </>
           }</div>
         ))}
       </main>

@@ -71,7 +71,7 @@ async function fetch_data() {
   console.log(`${songs.length} songs...`);
   fs.writeFileSync('./data/songs.txt', songs.join('\n'));
   console.log(`${rhymes.length} rhyme sets...`);
-  fs.writeFileSync('./data/rhymes.txt', idioms.join('\n'));
+  fs.writeFileSync('./data/rhymes.txt', rhymes.join('\n'));
   console.log(`${idioms.length} idioms...`);
   fs.writeFileSync('./data/idioms.txt', idioms.join('\n'));
 }
