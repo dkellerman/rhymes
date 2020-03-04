@@ -4,72 +4,27 @@ const { Client: ESClient } = require('@elastic/elasticsearch')
 const elastic = new ESClient({ node: env.ELASTIC_ENDPOINT });
 const indexConfig = require('./index_config.json');
 
-const makePairs = (arr) =>
-  arr.map((v, i) => arr.slice(i + 1).map(w => [v, w])).flat();
 
 async function reindex() {
-  const syns = fs.readFileSync('./public/data/synonyms.txt', 'utf8').split('\n')
+  const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n')
     .filter(line => !line.trim().startsWith('#'))
     .map(line => line.split(';').map(tok => tok.trim()).filter(Boolean))
-    .filter(synset => synset && synset.length);
-
-  const rhymes = fs.readFileSync('./public/data/rhymes.txt', 'utf8').split('\n');
-
-  for (const line of rhymes) {
-    const words = line.trim().split(';').map(w => w.trim());
-    for (const word of words) {
-      let syn;
-      // *ing -> *in'
-      if (word.endsWith("in'")) {
-        syn = [word, word.replace(/\'$/, "g")];
-      } else if (word.endsWith("ing") && word.length > 5) {
-        syn = [word.replace(/g$/, "'"), word];
-      }
-
-      if (!syns.find(s => s && syn && s.join('') === syn.join(''))) {
-        syns.push(syn);
-      }
-
-      // a-going -> going
-      // mercedes-benz -> mercedes benz
-      if (word.indexOf('-') > -1) {
-        if (word.startsWith('a-')) {
-          syn = [word, word.substring(2)];
-        } else {
-          syn = [word, word.replace('-', ' ')];
-        }
-
-        if (!syns.find(s => s && syn && s.join('') === syn.join(''))) {
-          syns.push(syn);
-        }
-      }
-    }
-  }
-
-  const freqs = {};
-
-  for (const line of rhymes) {
-    const words = line.split(';').map(t => t.trim().toLowerCase());
-    for (const pair of makePairs(words)) {
-      const wid = pair.sort().join(';');
-      freqs[wid] = (freqs[wid] || 0) + 1;
-    }
-  }
-
-  // write rhyme frequencies
-  const rf = Object.entries(freqs).filter(x => x[1] > 1).sort((a, b) => b[1]-a[1]);
-  fs.writeFileSync('./public/data/rhyme_freq.txt',
-    rf.map(x => x.join(' => ').replace(';', '/')).join('\n'));
+    .filter(synset => synset && synset.length)
+    .filter(Boolean);
+  const rhymeFreqs = fs.readFileSync('./data/rhyme_freq.txt', 'utf8').split('\n');
 
   const actions = [];
-  for (const [id, freq] of Object.entries(freqs)) {
-    const [word1, word2] = id.split(';');
+  for (const line of rhymeFreqs) {
+    const [pair, freq] = line.split(' => ');
+    const words = pair.split('/');
+    const wid = words.sort().join(';');
     const doc = {
-      id,
-      word1,
-      word2,
-      freq,
+      id: wid,
+      word1: words[0],
+      word2: words[1],
+      freq: parseInt(freq, 10),
     };
+    console.log(doc);
 
     actions.push({
       index: {
@@ -81,7 +36,7 @@ async function reindex() {
     });
   }
 
-  await createIndex(env.ELASTIC_INDEX, actions, syns.filter(Boolean));
+  // await createIndex(env.ELASTIC_INDEX, actions, syns);
 }
 
 async function createIndex(index, actions, syns=[]) {

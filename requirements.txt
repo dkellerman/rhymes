@@ -1,0 +1,8 @@
+nltk
+spacy
+BeautifulSoup4
+requests
+tqdm
+apache-beam[gcp]
+
+
