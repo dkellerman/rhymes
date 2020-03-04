@@ -4,6 +4,7 @@ const { Client: ESClient } = require('@elastic/elasticsearch')
 const elastic = new ESClient({ node: env.ELASTIC_ENDPOINT });
 const indexConfig = require('./index_config.json');
 
+reindex();
 
 async function reindex() {
   const syns = fs.readFileSync('./data/synonyms.txt', 'utf8').split('\n')
@@ -55,5 +56,3 @@ async function createIndex(index, actions, syns=[]) {
     });
   }
 }
-
-reindex();

@@ -2,7 +2,6 @@
   "name": "rhymes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "@elastic/elasticsearch": "^6.8.0",
     "dotenv": "^8.2.0",
@@ -26,9 +25,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-
-    "fetch": "NODE_ENV=development node ./scripts/fetch_data.js",
-    "process": "NODE_ENV=development node ./scripts/process_data.js",
+    "fetch": "NODE_ENV=development node ./scripts/fetch.js",
+    "process": "NODE_ENV=development node ./scripts/process.js",
     "reindex": "NODE_ENV=development node ./scripts/reindex.js"
   },
   "author": "",
