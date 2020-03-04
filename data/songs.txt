@@ -23,9 +23,12 @@ happy together;the turtles
 somebody that i used to know;gotye
 piano man;billy joel
 we'll be together;sting
+viva la vida;coldplay
+alive;pearl jam
 what'd i say;ray charles
 crazy;gnarls barkley
 sympathy for the devil;rolling stones
+shallow;lady gaga
 panama;van halen
 for what it's worth;buffalo springfield
 cold, cold heart;hank williams
@@ -49,8 +52,10 @@ don't it;billy currington
 yeah!;usher
 toxic;britney spears
 ooh baby baby;smokey robinson
+thank u, next;ariana grande
 i want a new drug;huey lewis & the news
 don't look back in anger;oasis
+hotline bling;drake
 alison;elvis costello
 rocket man;elton john
 storm warning;hunter hayes
@@ -74,17 +79,21 @@ american girl;tom petty
 song for the asking;simon & garfunkel
 train in vain;the clash
 angel from montgomery;john prine
+get lucky;daft punk
 the rising;bruce springsteen
 bartender;lady antebellum
 bohemian rhapsody;queen
 can't hurry love;the supremes
+bring it on home to me;sam cooke
 stuck on you;lionel richie
 photograph;def leppard
 here, there and everywhere;the beatles
 don't let me get me;pink
 uptown funk!;bruno mars
+titanium;david guetta
 rehab;amy winehouse
 walkin' on the sun;smash mouth
+ring of fire;johnny cash
 into the mystic;van morrison
 amanda;boston
 eleanor rigby;the beatles
@@ -117,6 +126,7 @@ mad world;gary jules
 islands in the stream;kenny rogers & dolly parton
 with a little help from my friends;the beatles
 like a rolling stone;bob dylan
+if it makes you happy;sheryl crow
 come dancing;the kinks
 you're so vain;carly simon
 uptown girl;billy joel
@@ -129,6 +139,7 @@ i can't go for that (no can do);hall & oates
 waterfalls;tlc
 dance me to the end of love;leonard cohen
 don't rock the jukebox;alan jackson
+born in the usa;bruce springsteen
 wannabe;spice girls
 hands to myself;selena gomez
 all i wanna do;sheryl crow
@@ -155,6 +166,7 @@ american pie;don mclean
 radio radio;elvis costello
 love don't live here;lady antebellum
 black or white;michael jackson
+i wanna dance with somebody;whitney houston
 moving on and getting over;john mayer
 my blue heaven;fats domino
 leaving las vegas;sheryl crow
@@ -162,6 +174,7 @@ i'm on fire;bruce springsteen
 he stopped loving her today;george jones
 hey ya!;outkast
 if i ain't got you;alicia keys
+gimme shelter;rolling stones
 jump;van halen
 drops of jupiter;train
 fresh eyes;andy grammer
@@ -170,13 +183,14 @@ the race is on;george jones
 last nite;the strokes
 hungry heart;bruce springsteen
 truly madly deeply;savage garden
-ring of fire;johnny cash
+fighter;christina aguilera
 you've lost that lovin' feeling;the righteous brothers
 i just want to dance with you;george strait
 modern love;david bowie
 wake up;arcade fire
 movin' out (anthony's song);billy joel
 one way or another;blondie
+enter sandman;metallica
 zombie;the cranberries
 wake me up before you go-go;wham!
 return of the grievous angel;gram parsons
@@ -195,6 +209,7 @@ hit the road jack;ray charles
 dancing in the dark;bruce springsteen
 black hole sun;soundgarden
 need you now;lady antebellum
+layla;derek and the dominos
 closer;the chainsmokers
 i am woman;helen reddy
 cry me a river;julie london
@@ -215,6 +230,7 @@ borderline;madonna
 tiny dancer;elton john
 honey, i'm good;andy grammer
 nothing's gonna stop us now;starship
+the joker;steve miller
 jolene;dolly parton
 don't you want me;the human league
 let's stay together;al green
@@ -228,6 +244,7 @@ wild wild life;talking heads
 the a team;ed sheeran
 turning home;david nail
 happy;pharrell williams
+closer;nine inch nails
 i want to vanish;elvis costello & the attractions
 st. mary's of regret;susan werner
 kids;mgmt
@@ -251,11 +268,14 @@ sugar;maroon 5
 everyday i write the book;elvis costello
 sunshine & whiskey;frankie ballard
 i'm every woman;chaka khan
+the gardener;the tallest man on earth
 always be my baby;mariah carey
 when i grow too old to dream;nat king cole
 easy;commodores
 bennie and the jets;elton john
 you shook me all night long;ac/dc
+love story;taylor swift
 out of my head;fastball
 snapback;old dominion
 johnny b. goode;chuck berry
+mmm bop;hanson

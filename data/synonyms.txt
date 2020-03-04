@@ -80,6 +80,9 @@ feelin';feeling
 pleasin';pleasing
 confusin';confusing
 cruisin';cruising
+ringin';ringing
+singin';singing
+strin';string
 fearin';fearing
 steerin';steering
 poppin';popping
@@ -97,10 +100,14 @@ formin';forming
 callin';calling
 warnin';warning
 fallin';falling
+amazin';amazing
+nothin';nothing
+searchin';searching
 mornin';morning
 wildin';wilding
-amazin';amazing
 disappearin';disappearing
+spinnin';spinning
+givin';giving
 risin';rising
 waitin';waiting
 anticipatin';anticipating
@@ -127,7 +134,6 @@ sayin';saying
 breakin';breaking
 endin';ending
 wendin';wending
-nothin';nothing
 stickin';sticking
 flowin';flowing
 beginnin';beginning
@@ -154,3 +160,4 @@ shakin';shaking
 quakin';quaking
 achin';aching
 makin';making
+fadin';fading
