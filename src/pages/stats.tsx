@@ -11,9 +11,12 @@ type Stats = {
   wfreq: any[];
 };
 
-const Li = styled.li.attrs({
-  className: 'padding-small',
-})``;
+const List = styled.ul`
+  padding: 0 0 0 15px;
+  li {
+    padding: 10px 0;
+  }
+`;
 
 const SubList = styled.div.attrs({})`
   width: 50vw;
@@ -28,10 +31,10 @@ const StatsPage = () => {
   React.useEffect(() => {
     setLoading(true);
     Promise.all([
-      fetchLines('/api/v1/data?f=songs'),
-      fetchLines('/api/v1/data?f=rhymes'),
-      fetchLines('/api/v1/data?f=rhyme_freq'),
-      fetchLines('/api/v1/data?f=word_freq'),
+      fetchLines('/api/data?f=songs'),
+      fetchLines('/api/data?f=rhymes'),
+      fetchLines('/api/data?f=rhyme_freq'),
+      fetchLines('/api/data?f=word_freq'),
     ]).then(([songs, rhymes, rfreq, wfreq]) => {
       setData({
         songs: songs.map(l => l.split(';')),
@@ -43,43 +46,25 @@ const StatsPage = () => {
     });
   }, []);
 
-  const totalRhymes: number = data.rhymes?.reduce((acc, val) =>
-    (acc || 0) + (val.length - 1), 0) || 0;
-
   return (
     <>
       <Head>
-        <title>Rhymes Stats</title>
+        <title>Song Stats | Songisms</title>
       </Head>
 
-      <NavBar>
-        <div className="padding text-center">
-          <strong>Stats</strong><br />
-          <Link href="/"><a>(Back to search)</a></Link>
-        </div>
-      </NavBar>
+      <NavBar />
 
-      <main className="padding-large">
+      <main className="padding">
+        <div>
+          <strong>Song Stats</strong>{' '}
+        </div>
+
         {loading && '...' || (
-          <ul>
-            <Li>
-              <Link href="/api/v1/data?f=rhyme_freq"><a>Most common rhymes</a></Link>{' '}
+          <List>
+            <li>
+              <Link href="/api/data?f=word_freq"><a>Most common words</a></Link>{' '}
               <small className="text-muted">
-                ({ data.rfreq.length } occurring more than once
-                out of ~{ totalRhymes } pairs)
-              </small>
-              <SubList>
-                <small className="text-muted">{
-                  data.rfreq.slice(0, 20).map(([r, f]) => (
-                    `${r} (${f})`
-                  )).join(' • ')} …
-                </small>
-              </SubList>
-            </Li>
-            <Li>
-              <Link href="/api/v1/data?f=word_freq"><a>Most common words</a></Link>{' '}
-              <small className="text-muted">
-                (~{ data.wfreq.length } unique words, occurring more than twice, no. of songs appearing in)
+                (~{ data.wfreq.length } unique words)
               </small>
               <SubList>
                 <small className="text-muted">{
@@ -88,9 +73,24 @@ const StatsPage = () => {
                   )).join(' • ')} …
                 </small>
               </SubList>
-            </Li>
-            <Li>
-              <Link href="/api/v1/data?f=songs"><a>All songs</a></Link>{' '}
+            </li>
+
+            <li>
+              <Link href="/api/data?f=rhyme_freq"><a>Most common rhymes</a></Link>{' '}
+              <small className="text-muted">
+                ({ data.rfreq.length })
+              </small>
+              <SubList>
+                <small className="text-muted">{
+                  data.rfreq.slice(0, 20).map(([r, f]) => (
+                    `${r} (${f})`
+                  )).join(' • ')} …
+                </small>
+              </SubList>
+            </li>
+
+            <li>
+              <Link href="/api/data?f=songs"><a>All songs</a></Link>{' '}
               <small className="text-muted">({ data.songs.length } total)</small>
               <SubList>
                 <small className="text-muted">{
@@ -100,15 +100,17 @@ const StatsPage = () => {
                   )).join(' • ')} …
                 </small>
               </SubList>
-            </Li>
-            <Li>
-              <Link href="/api/v1/data?f=rhymes"><a>All rhyme sets</a></Link>{' '}
+            </li>
+
+            <li>
+              <Link href="/api/data?f=rhymes"><a>All rhyme sets</a></Link>{' '}
               <small className="text-muted">({ data.rhymes.length } total)</small>
-            </Li>
-            <Li>
-              <Link href="/api/v1/data?f=synonyms"><a>Synonyms</a></Link>
-            </Li>
-          </ul>
+            </li>
+
+            <li>
+              <Link href="/api/data?f=synonyms"><a>Synonyms</a></Link>
+            </li>
+          </List>
         )}
       </main>
     </>

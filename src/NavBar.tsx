@@ -1,22 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import { NavBarWrapper } from './index.styles';
 
-type NavBarProps = {
-  children?: React.ReactNode;
-};
-
-export const NavBar: React.FC<NavBarProps> = ({
-  children,
-}) => {
+export const NavBar: React.FC = () => {
   return (
-    <header>
+    <NavBarWrapper>
       <nav className="split-nav fixed">
         <div className="nav-brand">
-          <h3>Rhymes</h3>
-        </div>
-
-        <div>
-          {children}
+          <h3><Link href="/"><a>Songisms</a></Link></h3>
         </div>
 
         <div className="collapsible">
@@ -25,16 +16,18 @@ export const NavBar: React.FC<NavBarProps> = ({
             <label htmlFor="collapsible1">
               <div className="bar1"></div>
               <div className="bar2"></div>
+              <div className="bar3"></div>
             </label>
           </button>
           <div className="collapsible-body">
             <ul className="inline">
+              <li><Link href="/"><a>Rhymes</a></Link> &#183;</li>
               <li><Link href="/stats"><a>Stats</a></Link> &#183;</li>
               <li><a href="https://github.com/dkellerman/rhymes" target="_blank">Github</a></li>
             </ul>
           </div>
         </div>
       </nav>
-    </header>
+    </NavBarWrapper>
   );
 }

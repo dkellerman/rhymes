@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import uniqBy from 'lodash/uniqBy';
-import { DebounceInput } from 'react-debounce-input';
 import { NavBar } from '../NavBar';
+import { SearchInput, SearchResults, SearchBar, SearchInfo } from '../index.styles';
 
 type SearchResults = {
   total: number;
@@ -42,30 +42,34 @@ const RhymesSearchPage = ({ initialQuery = '' }) => {
   return (
     <>
       <Head>
-        <title>Rhymes Search</title>
+        <title>Rhymes Search | Songisms</title>
       </Head>
 
-      <NavBar>
-        <DebounceInput
-          type="search"
-          inputRef={searchInput}
-          debounceTimeout={300}
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Search for rhymes used in actual songs..."
-        />
-      </NavBar>
+      <NavBar />
 
       <main className="padding-top">
+        <strong>Rhymes Search</strong>
+
+        <SearchBar>
+          <SearchInput
+            type="search"
+            inputRef={searchInput}
+            debounceTimeout={300}
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+            placeholder="Search for rhymes actually used in songs..."
+          />
+        </SearchBar>
+
         {loading && '...' || (hasResults && (
           <>
-            <div className="info">
+            <SearchInfo>
               { results.total } rhyme
               { results.total > 1 ? 's' : '' }
-              {' '}for{' '}<strong>“{query}”</strong>.
-            </div>
+              {' '}used{' '}for{' '}<strong>“{query}”</strong>.
+            </SearchInfo>
 
-            <ul className="results padding-left">
+            <SearchResults>
               {results.hits.map(hit => (
                 <li className="margin-bottom-small" key={hit.id}>
                   <span className={
@@ -78,14 +82,14 @@ const RhymesSearchPage = ({ initialQuery = '' }) => {
                   </small>
                 </li>
               ))}
-            </ul>
+            </SearchResults>
           </>
         ) || (
           <div className="no-results">{query &&
             <>
               “{query}” was not rhymed{' '}
               <strong>even once</strong>{' '}
-              in our database of ~250 songs!{' '}
+              in our database of ~280 songs!{' '}
               <Link href="/stats"><a>See the stats and songs here.</a></Link>
             </>
           }</div>
@@ -102,7 +106,7 @@ RhymesSearchPage.getInitialProps = ({ req, query }) => {
 };
 
 async function fetchRhymes(q): Promise<SearchResults> {
-  const resp = await fetch(`/api/v1/search?q=${encodeURIComponent(q)}`);
+  const resp = await fetch(`/api/rhymes?q=${encodeURIComponent(q)}`);
   const { results } = await resp.json();
 
   const uniqueHits = uniqBy(results.hits.hits.map(hit => {
