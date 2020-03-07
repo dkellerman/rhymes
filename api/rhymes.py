@@ -4,7 +4,7 @@ from flask import Flask, Response, request
 from elasticsearch import Elasticsearch
 
 app = Flask(__name__)
-es = Elasticsearch([ os.environ['ELASTIC_ENDPOINT'] ])
+es = Elasticsearch([ os.environ['ELASTIC_ENDPOINT'] ], verify_certs=False)
 index = os.environ['ELASTIC_INDEX']
 
 @app.route('/api/rhymes')
