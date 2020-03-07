@@ -7,13 +7,15 @@
     "dotenv": "^8.2.0",
     "dotenv-flow": "^3.1.0",
     "firebase-admin": "^8.9.2",
+    "formik": "^2.1.4",
     "lodash": "^4.17.15",
     "next": "^9.0.1",
     "node-html-parser": "^1.2.8",
     "react": "^16.8.6",
     "react-debounce-input": "^3.2.2",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "yup": "^0.28.3"
   },
   "devDependencies": {
     "@types/node": "^12.6.2",
