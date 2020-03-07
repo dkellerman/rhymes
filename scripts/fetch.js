@@ -16,6 +16,7 @@ async function fetch_data() {
   const songs = [];
   const rhymes = [];
   const idioms = [];
+  const lines = [];
 
   fs.mkdirSync('./data', { recursive: true });
   fs.mkdirSync('./data/lyrics', { recursive: true });
@@ -54,6 +55,7 @@ async function fetch_data() {
     const text = parse(data.content).structuredText.trim();
 
     songs.push(song);
+    lines.push(...text.split('\n').map(l => l.trim()));
 
     if (data.rhymes) {
       rhymes.push(...(data.rhymes.map(line =>
@@ -68,6 +70,8 @@ async function fetch_data() {
     fs.writeFileSync(lyricPath, text);
   });
 
+  console.log(`${lines.length} lines...`);
+  fs.writeFileSync('./data/lyrics/index.txt', lines.join('\n'));
   console.log(`${songs.length} songs...`);
   fs.writeFileSync('./data/songs.txt', songs.join('\n'));
   console.log(`${rhymes.length} rhyme sets...`);
