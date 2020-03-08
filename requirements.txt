@@ -1,7 +1,3 @@
 flask
 elasticsearch>=6.0.0,<7.0.0
-# nltk
-# spacy
-# BeautifulSoup4
-# requests
-# tqdm
+spacy

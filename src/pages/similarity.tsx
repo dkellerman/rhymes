@@ -2,17 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import { NavBar } from '../NavBar';
 
-type SimilarityResults = {
-  q: string;
-  results: Array<{
-    title: string;
-  }>;
-};
+type Result = any;
 
 const SimilarityPage = ({ initialQuery = '' }) => {
   const textArea = React.useRef<any>(null);
   const [query, setQuery] = React.useState(initialQuery);
-  const [results, setResults] = React.useState<SimilarityResults|null>(null);
+  const [results, setResults] = React.useState<Result[]|null>(null);
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
@@ -58,12 +53,32 @@ const SimilarityPage = ({ initialQuery = '' }) => {
           </button>
         </form>
 
-        {loading && '...' || (results && (
+        {loading && '...' || (results?.length && (
           <>
             <hr />
-            <pre>
-              {JSON.stringify(results)}
-            </pre>
+            <table>
+              <thead>
+                <tr>
+                  <th>Score</th>
+                  <th>Line</th>
+                  <th>Song</th>
+                </tr>
+              </thead>
+              <tbody>
+                {results.map(([score, line, song]) => (
+                  <tr>
+                    <td>{score}</td>
+                    <td>{line}</td>
+                    <td>{song}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </>
+        ) || (
+          <>
+            <hr />
+            {query && <strong>No results</strong>}
           </>
         ))}
       </main>
@@ -77,7 +92,7 @@ SimilarityPage.getInitialProps = ({ req, query }) => {
   };
 };
 
-async function fetchSimilarity(q): Promise<SimilarityResults> {
+async function fetchSimilarity(q): Promise<Result[]> {
   const resp = await fetch(`/api/similarity?q=${encodeURIComponent(q)}`);
   const { results } = await resp.json();
   return results;
